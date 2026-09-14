@@ -7,7 +7,7 @@ description: Produces a plain-English weekly or monthly client report across eve
 
 ## Pull
 1. `list_clients` → the client name exactly as stored.
-2. `client_overview` with the period (`days`: 7 for weekly, 28 or 30 for monthly). It returns every linked source and names the ones that are not linked; do not pull those separately.
+2. `client_overview` with the period (`days`: 7 for weekly, 28 or 30 for monthly) and `compare: true`. It returns every linked source for this period and the previous one of the same length under `previous`, and names the sources that are not linked; do not pull those separately. Every "up from" / "down from" comes from `previous`.
 3. For detail the overview lacks, add targeted calls: `gsc_query` (top queries and pages), `ads_report` (search terms), `meta_insights` (campaigns), `highlevel_opportunities` (won work).
 
 ## Write
