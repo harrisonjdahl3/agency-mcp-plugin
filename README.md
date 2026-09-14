@@ -7,7 +7,7 @@ Agency MCP (https://mcp.jiyumarketing.com) connects the accounts your agency alr
 ## Install
 
 ```
-/plugin marketplace add jiyumarketing/agency-mcp-plugin
+/plugin marketplace add harrisonjdahl3/agency-mcp-plugin
 /plugin install agency-mcp@agency-mcp
 ```
 
