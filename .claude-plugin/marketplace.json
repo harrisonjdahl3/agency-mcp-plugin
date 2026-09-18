@@ -1,13 +1,13 @@
 {
   "name": "agency-mcp",
   "owner": { "name": "Jiyu Marketing LLC", "url": "https://mcp.jiyumarketing.com" },
-  "metadata": { "description": "Agency MCP — the marketing-agency plugin for Claude Code: SEO, Google Ads, Meta Ads, CRM and client reporting skills on top of the Agency MCP connector.", "version": "1.1.0" },
+  "metadata": { "description": "Agency MCP — the marketing-agency plugin for Claude Code: SEO, Google Ads, Meta Ads, CRM and client reporting skills on top of the Agency MCP connector.", "version": "1.2.0" },
   "plugins": [
     {
       "name": "agency-mcp",
       "source": "./",
       "description": "SEO audits, keyword research, on-page content, Google Ads and Meta Ads management, CRM follow-up and branded client reports, using the accounts your agency already manages. Preview-then-confirm on every change.",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "author": { "name": "Jiyu Marketing LLC", "url": "https://mcp.jiyumarketing.com" },
       "category": "productivity"
     }
