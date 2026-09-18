@@ -11,6 +11,8 @@ Agency MCP (https://mcp.jiyumarketing.com) connects the accounts your agency alr
 /plugin install agency-mcp@agency-mcp
 ```
 
+Then type **"How do I set Agency MCP up?"** — it checks what is connected, names your clients, and tells you the one next step.
+
 The first tool call opens a Google sign-in for the Agency MCP connector. Sign in with the Google account you use to manage your clients. Then link each client's accounts once at https://mcp.jiyumarketing.com/dashboard → Clients, so reports and per-client questions resolve by name.
 
 Pricing: free for one client; paid plans are per client (see the site). No cost is charged through this plugin.
@@ -19,6 +21,7 @@ Pricing: free for one client; paid plans are per client (see the site). No cost 
 
 | Skill | What it does |
 |---|---|
+| `start` | First-run guide: what is connected, what to do next, and what to ask first. Triggers on "how do I set this up" / "what can you do". |
 | `seo-audit` | Site-level SEO health from Search Console, Analytics and the live WordPress site: what ranks, what's slipping, what to fix first. |
 | `keyword-research` | Keyword volumes, competition and bid ranges from Google Ads planning data, joined with what the site already ranks for. |
 | `seo-content` | Drafts or optimizes a page or post on the client's WordPress site, including title, meta description and JSON-LD, as a draft until approved. |
