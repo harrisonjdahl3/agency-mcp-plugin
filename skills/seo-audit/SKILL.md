@@ -31,3 +31,11 @@ Output, in this order:
 - A drop in impressions with stable position is demand or seasonality, not a penalty. Say which.
 - If Search Console has under 16 days of data (a new property), say the baseline is still forming and keep conclusions light.
 - Do not change anything on the site from this skill. Hand edits to `seo-content`, which previews before it writes.
+
+## Setting up Search Console for a new site
+When a client's site is not in Search Console yet, the order is fixed:
+1. `gsc_add_site` with the **client's name** and the site (`https://example.com/` for a URL-prefix property, `sc-domain:example.com` for a Domain property). A site is always added for a client the agency is paying for. If it refuses, relay the reason it gives (unknown client, beyond paid seats, or that client already has a different site). Do not look for another way in.
+2. `site_verification_token` returns a meta tag (URL-prefix) or a DNS TXT record (Domain property) and says where it goes. The meta tag lives in `<head>` on the home page and must stay there. A TXT record can only be added by whoever runs the domain's DNS.
+3. `site_verify` once the token is live. If Google cannot find it, say what to check; do not retry in a loop.
+4. `gsc_submit_sitemap`, then `gsc_list_sitemaps` a day later for errors and URL counts.
+A site that is added but not verified shows no data. Say that, rather than reporting zeros. There is no tool to remove a site, a sitemap or an owner.

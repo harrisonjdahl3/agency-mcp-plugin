@@ -22,7 +22,7 @@ Pricing: free for one client; paid plans are per client (see the site). No cost 
 | Skill | What it does |
 |---|---|
 | `start` | First-run guide: what is connected, what to do next, and what to ask first. Triggers on "how do I set this up" / "what can you do". |
-| `seo-audit` | Site-level SEO health from Search Console, Analytics and the live WordPress site: what ranks, what's slipping, what to fix first. |
+| `seo-audit` | Site-level SEO health from Search Console, Analytics and the live WordPress site: what ranks, what's slipping, what to fix first. Also sets Search Console up for a new site: add it for a client, verify ownership, submit the sitemap. |
 | `keyword-research` | Keyword volumes, competition and bid ranges from Google Ads planning data, joined with what the site already ranks for. |
 | `seo-content` | Drafts or optimizes a page or post on the client's WordPress site, including title, meta description and JSON-LD, as a draft until approved. |
 | `google-ads-manager` | Reports, search-term hygiene, negatives, budgets, pauses and new campaign builds, all previewed and validated by Google before anything applies. |
