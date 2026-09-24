@@ -26,6 +26,14 @@ Every write tool runs as a validated preview unless `confirm: true`. Show the pr
 ## Conversion tracking — check before anything else
 `ads_list_conversion_actions`. If there is no ENABLED primary action, the account is blind: every campaign reports 0 conversions no matter how many leads arrive, and Smart Bidding has nothing to learn from. Say that first. Then offer `ads_create_conversion_action` (WEBPAGE for a form / thank-you page — it returns the tag to install; AD_CALL for calls from the ad; WEBSITE_CALL for calls from the site) and tell the person exactly where the tag goes. On a WordPress site connected here you can install it yourself with `wp_install_tracking`: `ads_id` is the `AW-…` from the tag, `conversion_label` is the part after the slash in `send_to`, and `conversion_path` is the thank-you page. It installs by ID only and previews the exact tags first. `ads_update_conversion_action` fixes status, primary flag, name or value.
 
+## "Install call tracking" for a client
+One prompt, this order, each write previewed then confirmed:
+1. `ads_create_conversion_action` type **AD_CALL** ("Calls from ads"), then `ads_add_extensions` kind CALL with the client's lead number — calls placed from the ad are counted with no site code.
+2. `ads_create_conversion_action` type **WEBSITE_CALL** ("Calls from the website") and type **WEBPAGE** named "Phone click". Note each label.
+3. `wp_tracking_status`, then ONE `wp_install_tracking` call: `ads_id` (the AW- id), `phone_number` (exactly as shown on the site), `phone_clicks: "on"`, `phone_click_label` (the Phone click label), `call_conversion_label` (the website-call label), and `ga4_id` if Analytics is not already on the page. Preview shows the exact tags; confirm.
+4. Tell them to purge any page cache, tap the number on the site once, and that Ads shows the test within a few hours.
+If the site is not connected with an Administrator password or the Bridge is older than 1.2.0, the tool says so — relay it; those are one-time steps for the agency.
+
 ## Bidding
 `ads_campaign_bidding` shows the strategy and the last 30 days of conversions. Rules of thumb for a local-service account: under ~30 conversions a month, Maximize conversions with no target, or Maximize clicks with a CPC ceiling; a target CPA only once volume exists, set near the recent actual cost per lead. `ads_set_bidding_strategy` previews the before/after and warns when a target is premature.
 
