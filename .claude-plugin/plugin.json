@@ -1,6 +1,6 @@
 {
   "name": "agency-mcp",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Run a marketing agency from Claude: SEO audits, keyword research, on-page content, Google Ads and Meta Ads management, CRM follow-up and client reports — on the accounts you already manage, through the Agency MCP connector (Google Analytics, Search Console, Google Ads, Meta, WordPress, HighLevel). Every change is previewed and applied only when you confirm.",
   "author": { "name": "Jiyu Marketing LLC", "url": "https://mcp.jiyumarketing.com" },
   "homepage": "https://mcp.jiyumarketing.com",

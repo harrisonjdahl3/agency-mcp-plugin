@@ -32,6 +32,10 @@ One prompt, this order, each write previewed then confirmed:
 2. `ads_create_conversion_action` type **WEBSITE_CALL** ("Calls from the website") and type **WEBPAGE** named "Phone click". Note each label.
 3. `wp_tracking_status`, then ONE `wp_install_tracking` call: `ads_id` (the AW- id), `phone_number` (exactly as shown on the site), `phone_clicks: "on"`, `phone_click_label` (the Phone click label), `call_conversion_label` (the website-call label), and `ga4_id` if Analytics is not already on the page. Preview shows the exact tags; confirm.
 4. Tell them to purge any page cache, tap the number on the site once, and that Ads shows the test within a few hours.
+
+## Form leads (thank-you page)
+`ads_create_conversion_action` type WEBPAGE ("Quote form submitted"), then `wp_install_tracking` with `ads_id`, `conversion_label` and `conversion_path` (the thank-you page, e.g. `/thank-you/`). That page then fires the Ads conversion **and** a GA4 `generate_lead` event, which is what the reports and client dashboards count as a lead. It fires nowhere else.
+🔴 It only works if the form actually sends the visitor to that page. A form embedded in an iframe (HighLevel and many form builders) redirects inside the iframe, so the page never changes and nothing fires — one client showed 0 conversions on 42 paid clicks for exactly this reason. After installing, have the person submit the form once and confirm the browser lands on the thank-you URL. If it does not, the form's redirect must target the top window, or the form must fire an event on success.
 If the site is not connected with an Administrator password or the Bridge is older than 1.2.0, the tool says so — relay it; those are one-time steps for the agency.
 
 ## Bidding
