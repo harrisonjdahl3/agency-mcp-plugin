@@ -1,12 +1,14 @@
 ---
 name: local-seo-gbp
-description: Manages a client's Google Business Profile through the Agency MCP connector — locations, reviews and owner replies, posts, and performance (calls, direction requests, website clicks, impressions). Use for "reply to that review", "any new reviews", "how many people found us on Maps", "post an update to our profile". Requires the Business Profile tools, which appear on the connector once Google has granted the agency's project access; until then tell the person the tools are not enabled yet.
+description: Manages a client's Google Business Profile through the Agency MCP connector — locations, reviews and owner replies, posts, and performance (calls, direction requests, website clicks, impressions). Use for "reply to that review", "any new reviews", "how many people found us on Maps", "post an update to our profile". Business Profile is a separate, optional sign-in on the Agency MCP dashboard ("Connect Business Profile"); if the tools report it is not connected, send the person there.
 ---
 
 # Local SEO — Google Business Profile
 
 ## Availability
-The `gbp_*` tools register on the connector only after Business Profile API access and the `business.manage` scope are live for the deployment. If they are absent from the tool list, say so plainly and offer the Search Console and Analytics parts of local SEO instead (`seo-audit`).
+Business Profile uses its own sign-in, separate from the main Google connection. On the Agency MCP dashboard the person opens the **Business Profile** tab and clicks **Connect Business Profile**, signing in with the Google account that manages their clients' profiles (the one they use at business.google.com), keeping the Business Profile box ticked. If a `gbp_*` tool answers that Business Profile is not connected, say exactly that and point them to the tab; if the tools are absent from the list altogether, offer the Search Console and Analytics parts of local SEO instead (`seo-audit`).
+
+Then link each location to its client: `gbp_list_locations` gives the `gbp_location_id`, which goes in the client's **Business Profile location** field under **Clients** so reviews and posts resolve by client name.
 
 ## Reads
 - `gbp_list_locations` first; use its `gbp_location_id`.
