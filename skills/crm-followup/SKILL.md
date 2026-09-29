@@ -7,7 +7,7 @@ description: Works a client's HighLevel CRM through the Agency MCP connector —
 
 ## Always
 - `highlevel_list_locations` first; take the `location_id` from it.
-- Reads work as soon as the app is installed. Writes are **off by default** for every agency; the agency turns them on from its own dashboard (HighLevel panel). If a write is refused, say exactly that and where the switch is.
+- Reads work as soon as the CRM is connected on the dashboard (a private integration token created in the CRM's settings, or the one-click install once it is listed). Writes are **off by default** for every agency; the agency turns them on from its own dashboard (HighLevel panel). If a write is refused, say exactly that and where the switch is.
 
 ## Reads
 - Waiting on us: `highlevel_conversations` (recent, with unread counts), then `highlevel_read_conversation` for the thread before suggesting a reply.
