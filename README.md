@@ -28,7 +28,7 @@ Pricing: free for one client; paid plans are per client (see the site). No cost 
 | `google-ads-manager` | Reports, search-term hygiene, negatives, budgets, pauses and new campaign builds, all previewed and validated by Google before anything applies. |
 | `meta-ads-manager` | Meta (Facebook and Instagram) campaign reporting, status and budget changes with the same preview-then-confirm discipline. |
 | `crm-followup` | HighLevel: who is waiting on a reply, pipeline and won-work numbers, appointments, and prospect creation when writes are enabled. |
-| `client-report` | A plain-English weekly or monthly report across every channel a client has linked, published as a branded shareable page. |
+| `client-report` | A clear, jargon-free weekly or monthly report across every channel a client has linked, published as a branded shareable page. |
 | `local-seo-gbp` | Google Business Profile reviews, posts and performance — activates when the Business Profile tools are enabled on your account. |
 
 ## How the skills behave

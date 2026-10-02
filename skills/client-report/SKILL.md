@@ -1,6 +1,6 @@
 ---
 name: client-report
-description: Produces a plain-English weekly or monthly client report across every channel the client has linked — organic search, website, Google Ads, Meta ads, CRM leads and won work — and publishes it as a branded shareable page through the Agency MCP connector. Use for "send Acme their monthly report", "how did the client do last month", "build the weekly report". Starts from client_overview and writes commentary a business owner understands.
+description: Produces a clear, jargon-free weekly or monthly client report across every channel the client has linked — organic search, website, Google Ads, Meta ads, CRM leads and won work — and publishes it as a branded shareable page through the Agency MCP connector. Use for "send Acme their monthly report", "how did the client do last month", "build the weekly report". Starts from client_overview and writes commentary a business owner understands.
 ---
 
 # Client report
@@ -11,7 +11,7 @@ description: Produces a plain-English weekly or monthly client report across eve
 3. For detail the overview lacks, add targeted calls: `gsc_query` (top queries and pages), `ads_report` (search terms), `meta_insights` (campaigns), `highlevel_opportunities` (won work).
 
 ## Write
-Audience: the business owner. Each section is a heading, two to four headline numbers with the change versus the previous period, one short table if it helps, and commentary in plain English: what happened, why, and what the agency will do next. No jargon, no hedging.
+Audience: the business owner. Each section is a heading, two to four headline numbers with the change versus the previous period, one short table if it helps, and commentary in everyday words: what happened, why, and what the agency will do next. No jargon, no hedging.
 
 Suggested sections, only those with data:
 - **Leads and jobs won** (from the CRM when linked; this is the number the client cares about)
