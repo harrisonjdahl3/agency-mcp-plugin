@@ -11,7 +11,7 @@ description: Researches keywords for a client using Google Ads planning data (vo
 - Seeds: the client's services in the words a customer would use ("cedar fence installation", "deck builder"), and the client's site URL.
 
 ## Pull
-1. `ads_keyword_ideas` with `seeds`, `url` and `geo_target_ids`. Volumes are Google Search only, the same as Keyword Planner shows the client; pass `network: GOOGLE_SEARCH_AND_PARTNERS` only if asked. The result is `ideas` sorted by volume plus `total_ideas`; the default `limit` is 100, so raise it (up to 1000) when the total is higher and the brief needs the long tail. Keep: keyword, monthly volume, competition, top-of-page bid range.
+1. `ads_keyword_ideas` with `seeds`, `url` and `geo_target_ids`. Volumes are Google Search only, the same as Keyword Planner shows the client; add `network: GOOGLE_SEARCH_AND_PARTNERS` only if asked. The result is `ideas` sorted by volume plus `total_ideas`; the default `limit` is 100, so raise it (up to 1000) when the total is higher and the brief needs the long tail. Keep: keyword, monthly volume, competition, top-of-page bid range.
 2. If Search Console is linked: `gsc_query` (last 90 days, dimension `query`, row_limit 1000) to see what the site already earns impressions for.
 3. Join the two lists on the keyword text. Mark each keyword: **already ranking (position and clicks)**, **ranking but weak (position > 10)**, or **new**.
 
