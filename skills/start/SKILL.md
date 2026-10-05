@@ -13,6 +13,9 @@ description: First-run guide for Agency MCP. Use when the user asks how to set A
      readable and workable from this chat, with every change previewed before it happens.
    - What is ready for them right now, naming their actual clients.
    - The `next_step`, only if `status` is not `ready`. If it is a dashboard step, give the link.
+   - If `status` is `no_clients`, do not send them to the dashboard: call `suggest_clients`, name the
+     likeliest businesses, and create the one they pick with `create_client` (preview, then confirm).
+   - If they ask what is new, read `whats_new` and name the two or three most useful additions.
 3. End by offering to run the first `try_next` item immediately, as a question.
 
 If they ask "what can you do for <client>?", call `get_started` if you have not already, then
