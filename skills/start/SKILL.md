@@ -15,6 +15,9 @@ description: First-run guide for Agency MCP. Use when the user asks how to set A
    - The `next_step`, only if `status` is not `ready`. If it is a dashboard step, give the link.
    - If `status` is `no_clients`, do not send them to the dashboard: call `suggest_clients`, name the
      likeliest businesses, and create the one they pick with `create_client` (preview, then confirm).
+   - If a platform they want is not connected (Meta ads, Business Profile, the CRM, a WordPress
+     site), call `connect_platform` and give them the link it returns. Never ask for a token or
+     password in the conversation; the link opens a page where they enter it themselves.
    - If they ask what is new, read `whats_new` and name the two or three most useful additions.
 3. End by offering to run the first `try_next` item immediately, as a question.
 

@@ -38,7 +38,8 @@ Pricing: free for one client; paid plans are per client (see the site). No cost 
 - They start from `list_clients` and `list_connected_accounts`, never from remembered IDs.
 - Reads are free-form. Writes (a campaign change, a post, a reply, a message) always run as a preview first and are applied only on your explicit confirmation.
 - Numbers always come with the date range they cover.
-- If a client's account isn't linked yet, the skill tells you to link it on the dashboard rather than guessing.
+- If a client's account isn't linked yet, the skill sets the client up in the conversation rather than guessing.
+- If a platform isn't connected yet, the skill gives you a one-time link to connect it. Tokens and passwords are entered on that page, never in the conversation.
 
 ## Support
 
