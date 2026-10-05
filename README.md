@@ -22,6 +22,7 @@ Pricing: free for one client; paid plans are per client (see the site). No cost 
 | Skill | What it does |
 |---|---|
 | `start` | First-run guide: what is connected, what to do next, and what to ask first. Triggers on "how do I set this up" / "what can you do". |
+| `connect-accounts` | Connects a platform or an extra login from the conversation with a one-time link, creates a link a client can use to connect their own accounts instead of granting manager access, and groups accounts into clients with a name check so one business's data never lands under another. |
 | `client-audit` | A scorecard of what to fix first across Google Ads, Meta ads, Search Console and Analytics, with the amount each problem is costing. "Do it all" then previews the keyword pauses and negative keywords together and applies them in one confirmed step. |
 | `weekly-review` | Every change you confirmed, with the week before set against the week after: win, loss, flat or too new to judge. |
 | `seo-audit` | Site-level SEO health from Search Console, Analytics and the live WordPress site: what ranks, what's slipping, what to fix first. Also sets Search Console up for a new site: add it for a client, verify ownership, submit the sitemap. |
