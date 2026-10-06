@@ -15,6 +15,8 @@ description: First-run guide for Agency MCP. Use when the user asks how to set A
    - The `next_step`, only if `status` is not `ready`. If it is a dashboard step, give the link.
    - If `status` is `no_clients`, do not send them to the dashboard: call `suggest_clients`, name the
      likeliest businesses, and create the one they pick with `create_client` (preview, then confirm).
+   - If a tool says an account "is not linked to any of your clients" and a client exists, use
+     `link_account` (preview, then confirm) rather than sending them to the dashboard.
    - If a platform they want is not connected, or they want a second login or a link for a client
      to connect their own accounts, use the `connect-accounts` skill (`connect_platform`,
      `client_access_link`). Never ask for a token or password in the conversation.

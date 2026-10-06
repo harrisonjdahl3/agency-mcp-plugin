@@ -34,10 +34,16 @@ A client is one business. Connecting a login links nothing by itself.
 
 Why it matters: a wrong link is silent. Every report, audit and ad change for that client would then be about another business.
 
-## Changing links later
-Links for an existing client are edited on the dashboard (Clients, then Edit on the client). Say so and give the link `https://mcp.jiyumarketing.com/dashboard#clients`. A client card shows an amber note when an account does not look like that client; the person can fix it or confirm it is right there.
+## Adding an account to a client that already exists
+This is the usual case after connecting a platform: the client is set up, the new account is not placed yet, and a tool refuses with "not linked to any of your clients".
+1. `link_account` with the client's name exactly as `list_clients` returns it and the ids as the list tools returned them. Call it without `confirm` first.
+2. The preview has the same `accounts` list and `warnings` as `create_client`; the same rules apply. Show the names, ask about anything flagged, and set `acknowledge_mismatch: true` only after the person has confirmed that named account.
+3. If the preview has `replaces`, the client already has a different account of that kind. Name both to the person; call again with `replace: true` only if they want the swap.
+4. On a clear yes, call again with `confirm: true`, then re-run the request that was refused.
+
+Links can also be edited on the dashboard (Clients, then Edit on the client), where a client card shows an amber note when an account does not look like that client.
 
 ## Rules
 - Ids come from the list tools, never from memory or guesswork.
-- One account belongs to one client. If `create_client` says an account is already linked to another client, report that; do not look for a way around it.
+- One account belongs to one client. If `create_client` or `link_account` says an account is already linked to another client, report that; do not look for a way around it.
 - Turning CRM changes on, billing and removing a login are done on the dashboard.
