@@ -39,7 +39,8 @@ It accepts only items the audit flags at that moment, so a term it lists under `
 - A Meta campaign spending without leads: `meta_set_campaign_status` to pause it. A traffic or awareness campaign is not expected to produce leads; check what it is for before proposing a pause.
 - Ad fatigue on Meta: new creative is uploaded in Meta Ads Manager; say so.
 - Rankings between 5 and 20, and low click-through titles: `wp_get_post` then `wp_set_seo` on the page behind the query.
-- Leads not measured in Analytics: `ga4_create_key_event`, then `wp_tracking_status`.
+- Leads not measured in Analytics: `ga4_create_key_event`, then `wp_tracking_status` (WordPress) or `gtm_tracking_status` (any site with Tag Manager).
+- Website areas (`site_tracking`, `site_on_page`, `site_health`) come from a read of the live site, any builder; `site_check` on the URL gives the page-by-page detail behind them.
 
 Each of these previews first and applies only on confirmation.
 

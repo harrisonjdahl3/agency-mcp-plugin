@@ -1,6 +1,6 @@
 ---
 name: seo-audit
-description: Audits a client's organic search health using Search Console, Google Analytics and the live WordPress site through the Agency MCP connector. Use when asked how a client's SEO is doing, why traffic dropped, what ranks, what to fix first, or for a monthly SEO review. Also use for "which pages are losing clicks", "what queries are we close to page one on", or "audit this site". Not for paid search (use google-ads-manager) or for writing content (use seo-content).
+description: Audits a client's organic search health using Search Console, Google Analytics and a read of the live website (any builder) through the Agency MCP connector. Use when asked how a client's SEO is doing, why traffic dropped, what ranks, what to fix first, or for a monthly SEO review. Also use for "which pages are losing clicks", "what queries are we close to page one on", or "audit this site". Not for paid search (use google-ads-manager) or for writing content (use seo-content).
 ---
 
 # SEO audit
@@ -14,7 +14,7 @@ description: Audits a client's organic search health using Search Console, Googl
 - **Position 4–15 opportunities** — from the query rows, list terms with impressions ≥ 50 and position between 4 and 15: these move with on-page work.
 - **Losers** — pages or queries whose clicks fell ≥ 30% period over period with impressions still present (a ranking problem) versus impressions also falling (a demand problem).
 - **Site behaviour** — `ga4_report` with metrics `["sessions","engagedSessions","keyEvents"]` and dimension `["sessionDefaultChannelGroup"]`; then `["landingPagePlusQueryString"]` with `["sessions","keyEvents"]` limit 50 for Organic Search context.
-- **Technical spot-check (WordPress sites only)** — `wp_check_site` for reachability and plugin health, `wp_list_posts` for stale or thin pages, `wp_get_post` on the top 3 organic landing pages to check title, H1, and whether a meta description and schema exist.
+- **Technical spot-check (any site)** — `site_check` with the client's URL: titles, meta descriptions, headings, schema, tracking tags found, robots.txt, sitemap, broken internal links and Google's mobile speed score. Works on Wix, Squarespace, Shopify, Webflow, funnels and WordPress alike; no connection needed. On a connected WordPress site, add `wp_check_site` for plugin health and `wp_get_post` on the top 3 organic landing pages to read the content itself.
 
 ## Judge, then write
 Score each finding by expected lead impact, not by SEO purity. Lead-generating service pages come first.
