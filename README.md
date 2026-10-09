@@ -1,5 +1,7 @@
 # Agency MCP plugin for Claude Code
 
+Also works as a connector in ChatGPT, Codex and any assistant that takes a custom MCP server: add `https://mcp.jiyumarketing.com/mcp` and sign in. The skills below are written for any assistant; only the install commands are Claude Code's.
+
 Run a marketing agency from the conversation. This plugin installs the **Agency MCP** connector and a set of skills that know how to use it: SEO audits, keyword research, on-page content, Google Ads and Meta Ads management, CRM follow-up and branded client reports.
 
 Agency MCP (https://mcp.jiyumarketing.com) connects the accounts your agency already manages — Google Analytics, Search Console, Google Ads, Meta ads, WordPress and HighLevel — to Claude. It only ever sees what your own logins can reach, and **every change is previewed first and applied only when you confirm it.**
