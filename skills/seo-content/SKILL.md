@@ -1,12 +1,15 @@
 ---
 name: seo-content
-description: Drafts or optimises a page or blog post on a client's WordPress site through the Agency MCP connector, including the SEO title, meta description and JSON-LD schema. Use when asked to write a service page, landing page, location page, blog post, or to "optimise this page", "fix the title tags", "add schema", "rewrite the meta descriptions". Creates drafts and previews every change; publishes only when the person explicitly says to publish.
+description: Drafts or optimises a page or blog post on a client's website — WordPress through the Agency MCP connector, or any other builder through the assistant's own connector for it — including the SEO title, meta description and JSON-LD schema. Use when asked to write a service page, landing page, location page, blog post, or to "optimise this page", "fix the title tags", "add schema", "rewrite the meta descriptions". Creates drafts and previews every change; publishes only when the person explicitly says to publish.
 ---
 
-# SEO content on WordPress
+# SEO content on a client's website
 
 ## Before writing
-1. `list_clients` → the client's `wordpress_site` label. If none, stop and say the site must be connected on the dashboard → WordPress.
+1. `list_clients` → the client's `wordpress_site` label.
+   - **No WordPress link here?** Check your own tools for a connector to this site or its builder (Webflow, Wix, WordPress.com, a WordPress plugin connector). If one exists, write the content with this skill's rules and make the edit through that connector: show the exact change first, apply it only on the person's yes, then `site_check` the URL to confirm it is live. If none exists, deliver the finished copy, SEO title and description for the person to paste, and mention that connecting the site (dashboard → Websites) or adding their builder's own connector lets you make the edit next time.
+   - **Connected both here and through another connector?** Pick one and use it for the whole job.
+   The steps below are the WordPress-through-Agency-MCP path.
 2. `wp_site_capabilities` once per site: confirms the bridge plugin, so SEO fields and schema can be set.
 3. If the brief came from `keyword-research`, use it. Otherwise ask for, or infer, the primary keyword and the page's job (rank for X, convert visitors to calls or form fills).
 4. For an existing page: `wp_get_post` first. Read what's there; keep what works.
