@@ -17,6 +17,7 @@ description: First-run guide for Agency MCP. Use when the user asks how to set A
      likeliest businesses, and create the one they pick with `create_client` (preview, then confirm).
    - A business they do not manage yet (a pitch): the `prospect-audit` skill — `audit_prospect` works
      with nothing connected; `create_prospect_report` publishes the page to send.
+   - Where a client ranks, or rankings for a report: the `rank-tracking` skill (`rank_track`, `rank_report`).
    - A site the agency built in code: the `site-tracking-in-code` skill (ids and snippets from
      `tracking_spec`, edits in the codebase, `site_check` to verify). Never edit a codebase through
      the connector; it has no tool for that.

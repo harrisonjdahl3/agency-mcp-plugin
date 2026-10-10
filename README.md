@@ -49,3 +49,6 @@ Pricing: free for one client; paid plans are per client (see the site). No cost 
 harrison@jiyumarketing.com · Privacy: https://mcp.jiyumarketing.com/privacy · Terms: https://mcp.jiyumarketing.com/terms
 
 Not affiliated with, sponsored by, or endorsed by Google, Meta, HighLevel, Automattic or Anthropic.
+
+## Rankings
+- `rank-tracking` — where a client ranks: Search Console position for up to ten terms daily and the map pack weekly (`rank_track`, `rank_report`).
