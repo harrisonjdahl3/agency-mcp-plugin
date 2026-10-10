@@ -51,6 +51,7 @@ harrison@jiyumarketing.com · Privacy: https://mcp.jiyumarketing.com/privacy · 
 Not affiliated with, sponsored by, or endorsed by Google, Meta, HighLevel, Automattic or Anthropic.
 
 ## Rankings
+- `run-client` — runs a client step by step: onboarding, tracking stack, website fixes, Google Ads and the weekly cycle (`client_playbook`, `playbook_mark`).
 - `rank-tracking` — where a client ranks: Search Console position for up to ten terms daily and the map pack weekly (`rank_track`, `rank_report`).
 
 ## Gemini CLI
