@@ -15,6 +15,8 @@ description: First-run guide for Agency MCP. Use when the user asks how to set A
    - The `next_step`, only if `status` is not `ready`. If it is a dashboard step, give the link.
    - If `status` is `no_clients`, do not send them to the dashboard: call `suggest_clients`, name the
      likeliest businesses, and create the one they pick with `create_client` (preview, then confirm).
+   - A business they do not manage yet (a pitch): the `prospect-audit` skill — `audit_prospect` works
+     with nothing connected; `create_prospect_report` publishes the page to send.
    - A site the agency built in code: the `site-tracking-in-code` skill (ids and snippets from
      `tracking_spec`, edits in the codebase, `site_check` to verify). Never edit a codebase through
      the connector; it has no tool for that.
