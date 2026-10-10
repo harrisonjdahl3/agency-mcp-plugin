@@ -52,3 +52,11 @@ Not affiliated with, sponsored by, or endorsed by Google, Meta, HighLevel, Autom
 
 ## Rankings
 - `rank-tracking` — where a client ranks: Search Console position for up to ten terms daily and the map pack weekly (`rank_track`, `rank_report`).
+
+## Gemini CLI
+
+```
+gemini extensions install https://github.com/harrisonjdahl3/agency-mcp-plugin
+```
+
+Then run `/mcp auth agency-mcp` inside Gemini and sign in. The same skills load from `skills/`.
