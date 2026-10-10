@@ -1,6 +1,6 @@
 ---
 name: prospect-audit
-description: Audits a business the agency does not manage yet, from public data, through the Agency MCP connector — Google Business Profile completeness, reviews against nearby competitors, the website, tracking tags and map-pack position for its core searches — then publishes a branded page the agency can send. Use when asked to "audit [business] for a pitch", "run a prospect audit", "check how [business] shows up online before I reach out", or "make an audit I can send to [prospect]". Nothing needs to be connected.
+description: Audits a business the agency does not manage yet — from just its website, or its name and city — from public data, through the Agency MCP connector — Google Business Profile completeness, reviews against nearby competitors, the website, tracking tags and map-pack position for its core searches — then publishes a branded page the agency can send. Use when asked to "audit [business] for a pitch", "run a prospect audit", "check how [business] shows up online before I reach out", or "make an audit I can send to [prospect]". Nothing needs to be connected. The dashboard's Audits tab runs the same audit.
 ---
 
 # Prospect audit
@@ -8,8 +8,8 @@ description: Audits a business the agency does not manage yet, from public data,
 The pitch tool. In a few minutes: a scorecard, the three fixes most worth making in everyday words, and (on a yes) a branded page to send. Nothing is sent to the prospect by any tool.
 
 ## Run
-1. Get the business name and city from the person; ask for the trade in two or three words if it is not obvious ("plumber", "fence contractor"), and the website if they know it.
-2. `audit_prospect` with `name`, `city`, `trade` and, when known, `website`. Add `terms` only if the person named specific searches; otherwise the tool builds "service + city" terms. The speed check adds up to 40 seconds; keep it on unless they are in a hurry.
+1. The website alone is enough. If the person gives a site, call with just `website`: the tool finds the business's Google listing by its domain, and reads the name, city (from the listing, or the site's own title for service-area businesses) and trade (what the site says it does, else Google's category) itself. Without a website, ask for the business name and city.
+2. `audit_prospect` with `website`, or `name` + `city`; add `trade` only if the person named one. Add `terms` only if the person named specific searches; otherwise the tool builds "service + city" terms. The speed check adds up to 40 seconds; keep it on unless they are in a hurry.
 3. Read the result: `overall`, five `sections` (each with `score`, `status`, `summary`, `facts`), `top_fixes`, `competitors`, `not_checked`.
 
 ## Tell the person
