@@ -27,6 +27,14 @@ For agencies that want Agency MCP to lead: it knows the order, checks the client
 4. Google Ads — the account · a campaign built from keyword research, created paused · cutting wasted spend
 5. Every week — rankings, change review, search-term negatives, and a client report that leads with the wins
 
+## Autopilot (Premium)
+Once a client is set up and its Google Ads tracks leads, the weekly Ads hygiene can run by itself.
+1. `autopilot_preview` for the client: show the person what it would pause and block this week, and its proposals.
+2. On their yes, `autopilot_set` mode `shadow` first: every Monday it records what it would do and changes nothing.
+3. After a shadow week or two they agree with, `autopilot_set` mode `on`: it pauses keywords that keep spending with no leads and blocks search terms an AI review judges clearly irrelevant, at most 5 keywords and 15 terms a week, never brand terms.
+4. Each week, `autopilot_status` shows what it did and what needs the person: budgets, competitor or location terms, and any lead drought. Those still go through the normal tools with a preview.
+Autopilot holds itself when tracking is missing or the account had under 3 conversions in 30 days; fix tracking before switching it on.
+
 ## Rules
 - One step at a time. Never batch several steps' changes into one confirmation.
 - A step marked `unknown` could not be checked: say so and confirm by hand; never assume it is done.
