@@ -16,7 +16,7 @@ If the plan does not include Autopilot, the tool says so with the upgrade link: 
 ## Run it now ("run Autopilot on [client]")
 1. `autopilot_start` with the client (and `started_by`, e.g. "the agency, on request"). It returns a briefing and `instructions`, and locks this conversation to that client and its allowed changes. Agency MCP checks every call: other clients are refused, and changes outside the limits are recorded as proposals.
 2. Follow `instructions` exactly. They begin with Autopilot's own past changes, scored on leads: undo or correct anything that was followed by fewer or worse leads, and keep what worked.
-3. Finish with `autopilot_finish`: the run_id, a short report (status, headline, at most 3 done, at most one needs_you, details) and up to 3 `lessons`. If anything was changed through a connector other than Agency MCP (a site's own WordPress connector), list it in `changes_elsewhere` so the next run can judge it.
+3. Finish with `autopilot_finish`: the run_id, a short report (status, headline, at most 3 done, at most one needs_you, details), up to 3 `lessons`, and `changes` — the change log: every change made, why, and the measurable result expected. If anything was changed through a connector other than Agency MCP (a site's own WordPress connector), list it in `changes_elsewhere` so the next run can judge it.
 4. Tell the person the headline, what changed, and the one thing that needs them, if any. Nothing else.
 One client per conversation: run the next client after `autopilot_finish`.
 
@@ -24,7 +24,10 @@ One client per conversation: run the next client after `autopilot_finish`.
 `autopilot_routine` gives the prompt for a weekly scheduled task in Claude (all clients in shadow or on, or one client). Offer to set it up: in Claude, create a scheduled task that runs once a week with the Agency MCP connector on, and paste the prompt.
 
 ## What it did, and what needs the person
-`autopilot_status` (one client, or all): runs, open lead alerts and the proposals waiting for a yes, each with the exact tool to apply it.
+- `autopilot_status` (one client, or all): runs, open lead alerts, and the proposals waiting for a yes, each with a review link.
+- On the person's yes or no to a proposal: `autopilot_approve` with its id and `approve` (runs exactly that change, nothing else) or `decline`.
+- `autopilot_log`: every change Autopilot made, why, the result it expected, and the measured result (leads before against after). Use it for "what did it change", "why did it do that", "did it work".
+- `ads_diagnose`: the Google Ads checks Autopilot must clear (tracking, bidding, reach lost to rank or budget, keyword quality, ad strength, wasted searches).
 
 ## Rules
 - Autopilot never spends more money, takes a page down, messages anyone or touches another client on its own; those come back as proposals.
