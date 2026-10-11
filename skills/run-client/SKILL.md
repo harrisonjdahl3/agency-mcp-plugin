@@ -35,6 +35,9 @@ Once a client is set up and its Google Ads tracks leads, the weekly Ads hygiene 
 4. Each week, `autopilot_status` shows what it did and what needs the person: budgets, competitor or location terms, and any lead drought. Those still go through the normal tools with a preview.
 Autopilot holds itself when tracking is missing or the account had under 3 conversions in 30 days; fix tracking before switching it on.
 
+## When leads stop
+`lead_check` for the client whenever the person says leads dropped, the phone went quiet, or "is the form working". It tests every lead signal against its own earlier rate while traffic continues, tells a broken form from a broken tracking tag, loads every page the ads send people to, and names the likely cause and the fix. Lead the answer with what to do today. Clients with Autopilot in shadow or on are checked daily, and `client_overview` carries any open `lead_alerts`: raise those before any other number.
+
 ## Rules
 - One step at a time. Never batch several steps' changes into one confirmation.
 - A step marked `unknown` could not be checked: say so and confirm by hand; never assume it is done.

@@ -1,6 +1,6 @@
 {
   "name": "agency-mcp",
-  "version": "1.8.0",
+  "version": "1.8.1",
   "description": "Marketing agency client work: Google Ads, Analytics, Search Console, Business Profile, Meta ads, any website and your CRM, per client. Every change is previewed first.",
   "mcpServers": {
     "agency-mcp": {
