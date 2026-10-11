@@ -1,7 +1,7 @@
 {
   "name": "agency-mcp",
-  "version": "1.8.1",
-  "description": "Marketing agency client work: Google Ads, Analytics, Search Console, Business Profile, Meta ads, any website and your CRM, per client. Every change is previewed first.",
+  "version": "1.9.0",
+  "description": "Marketing agency client work, or let Autopilot run it: Google Ads, Analytics, Search Console, Business Profile, Meta ads, any website and your CRM, per client. Every manual change is previewed first.",
   "mcpServers": {
     "agency-mcp": {
       "httpUrl": "https://mcp.jiyumarketing.com/mcp?src=gemini"
