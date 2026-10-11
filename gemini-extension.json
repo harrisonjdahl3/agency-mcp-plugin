@@ -1,6 +1,6 @@
 {
   "name": "agency-mcp",
-  "version": "1.9.1",
+  "version": "1.9.2",
   "description": "Marketing agency client work, or let Autopilot run it: Google Ads, Analytics, Search Console, Business Profile, Meta ads, any website and your CRM, per client. Every manual change is previewed first.",
   "mcpServers": {
     "agency-mcp": {

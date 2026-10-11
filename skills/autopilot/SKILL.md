@@ -27,9 +27,12 @@ One client per conversation: run the next client after `autopilot_finish`.
 - `autopilot_status` (one client, or all): runs, open lead alerts, and the proposals waiting for a yes, each with a review link.
 - On the person's yes or no to a proposal: `autopilot_approve` with its id and `approve` (runs exactly that change, nothing else) or `decline`.
 - `autopilot_log`: every change Autopilot made, why, the result it expected, and the measured result (leads before against after). Use it for "what did it change", "why did it do that", "did it work".
+- `whole_picture`: the ads, the website and Analytics joined per page and per search (paid clicks against leads from every source and organic rank). Look at it before adjusting anything, by hand or with Autopilot.
 - `ads_diagnose`: the Google Ads checks Autopilot must clear (tracking, bidding, reach lost to rank or budget, keyword quality, ad strength, wasted searches).
 
 ## Rules
+- Before any change, check the whole picture for what it touches; every change-log reason cites at least two data sources.
+- One change at a time: after a significant change (bidding, budget, a new ad or keywords, a page edit) the next one on the same account or page waits until it has been judged.
 - Autopilot never spends more money, takes a page down, messages anyone or touches another client on its own; those come back as proposals.
 - If it is blocked (a page builder it cannot edit, a missing login, a failing connector), that is its one ask, with the exact fix.
 - It never rebuilds a site. If a rebuild would pay off, it says why; the person decides.
