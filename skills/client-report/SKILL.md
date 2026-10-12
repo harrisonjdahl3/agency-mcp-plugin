@@ -1,6 +1,6 @@
 ---
 name: client-report
-description: Produces a clear, jargon-free weekly or monthly client report across every channel the client has linked — organic search, website, Google Ads, Meta ads, CRM leads and won work — and publishes it as a branded shareable page through the Agency MCP connector. Use for "send Acme their monthly report", "how did the client do last month", "build the weekly report". Starts from client_overview and writes commentary a business owner understands.
+description: Produces a clear, jargon-free weekly or monthly client report across every channel the client has linked — organic search, website, Google Ads, Meta ads, CRM leads and won work — and publishes it as a branded shareable page through the Agency MCP connector, in whatever look the agency wants. Use for "send Acme their monthly report", "how did the client do last month", "build the weekly report", "change how my reports look", "edit that report", "save this as a template". Starts from client_overview and writes commentary a business owner understands.
 ---
 
 # Client report
@@ -22,7 +22,15 @@ Suggested sections, only those with data:
 - **Next steps**: three concrete actions
 
 ## Publish
-`create_client_report` with `client`, `title`, `period_label` and the `sections` (heading, stats with `sub` for the change, optional table, commentary). Return the link. Branding must be set on the dashboard first, or the report goes out unbranded; say so if the result shows no branding.
+`create_client_report` with `client`, `title`, `period_label` and the `sections` (heading, stats with `sub` for the change, optional table, commentary). Each section can also carry `blocks`, in any order: `chart` (bar, line or donut, e.g. leads by month), `callout` ("Win of the month"), `checklist` (done this month), `quote` (a customer's words), `image` (https), `columns` (two or three side by side), `divider`, `text` (with **bold**, *italic*, [links](https://…) and "- " lists) and `html` for anything else (cleaned to safe tags). Return the link. If the result shows no branding, say so: set it with `report_style` or on the dashboard.
+
+## The look
+- `report_style` changes how reports look for the whole agency (leave `client` out) or one client: agency name, logo link, colors, fonts, corners, spacing, header, a cover page, footer, and custom CSS. With nothing to set, it returns what is set and the saved templates. Live client dashboards use the same look.
+- On the dashboard (Account → Your reports) the agency can describe the look in a chat box and watch a live preview; it is the same setting.
+
+## Edit, and reuse
+- `update_client_report` with the report's link changes anything (title, period, sections replaced, added or removed by heading, its own style) and keeps the same link.
+- `report_template`: `save` one from an existing report (`from_report`) or from sections; `get` returns its structure to follow with this period's numbers; then `create_client_report` with `template`. Use for "build Acme's report from our monthly template".
 
 ## Rules
 - Every number carries its period.
