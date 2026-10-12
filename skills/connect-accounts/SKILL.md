@@ -24,6 +24,9 @@ An account can hold several Google logins, several Facebook logins, several Busi
 - Tell the person to send it themselves, by email or text.
 - When the client has connected, their accounts appear in the list tools marked with their login. Then link them to the client as below.
 
+## Connect everything the client has
+Before creating a client, or right after, ask the person once, in one message, what else the business has: Google Ads, Facebook or Instagram ads, a Google Business Profile, a website (and whether it is WordPress), and a CRM. `create_client` and `link_account` return `client_setup` with exactly what is still missing and how to close each: `link_account` when the account is already connected (for example Meta is connected but not linked to this client), or `connect_platform` first when it is not. Close every yes, skip what they don't have, and do this before any Autopilot offer: Autopilot does more with more connected.
+
 ## Grouping accounts into a client
 A client is one business. Connecting a login links nothing by itself.
 1. `suggest_clients` groups unlinked accounts by business name. `list_clients` shows what exists.

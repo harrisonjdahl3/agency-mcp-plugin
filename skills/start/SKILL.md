@@ -14,7 +14,9 @@ description: First-run guide for Agency MCP. Use when the user asks how to set A
    - What is ready for them right now, naming their actual clients.
    - The `next_step`, only if `status` is not `ready`. If it is a dashboard step, give the link.
    - If `status` is `no_clients`, do not send them to the dashboard: call `suggest_clients`, name the
-     likeliest businesses, and create the one they pick with `create_client` (preview, then confirm).
+     likeliest businesses, ask once what else the business has (Google Ads, Facebook or Instagram ads,
+     Business Profile, website and whether it is WordPress, CRM) and connect what is missing, then create
+     the one they pick with `create_client` (preview, then confirm) and close anything in its `client_setup`.
    - A business they do not manage yet (a pitch): the `prospect-audit` skill — `audit_prospect` works
      with nothing connected; `create_prospect_report` publishes the page to send.
    - New to marketing, or wants Agency MCP to lead a client end to end: the `run-client` skill (`client_playbook`) — onboarding, tracking, website, ads and the weekly cycle, one previewed step at a time.
