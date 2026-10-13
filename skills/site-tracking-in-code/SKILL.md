@@ -1,11 +1,11 @@
 ---
 name: site-tracking-in-code
-description: Sets up Analytics, Google Ads conversion tracking and Search Console on a client website that the agency built and edits in code (Next.js, Astro, plain HTML, any framework) using the Agency MCP connector for the ids and verification and the file system for the edits. Use when asked to "add tracking to the site I built", "put Analytics on Acme's site", "track form leads and phone taps", or "verify the site in Search Console" for a site that is a codebase rather than WordPress or a page builder.
+description: Sets up Analytics, Google Ads conversion tracking and Search Console on a client website that the agency built and edits in code (Next.js, Astro, plain HTML, any framework) using the Agency Autopilot connector for the ids and verification and the file system for the edits. Use when asked to "add tracking to the site I built", "put Analytics on Acme's site", "track form leads and phone taps", or "verify the site in Search Console" for a site that is a codebase rather than WordPress or a page builder.
 ---
 
 # Tracking on a site you built in code
 
-The connector owns the accounts; you own the code. Agency MCP never edits a codebase and never installs code on a site. It gives you the ids and the exact snippets, you place them, it checks the result.
+The connector owns the accounts; you own the code. Agency Autopilot never edits a codebase and never installs code on a site. It gives you the ids and the exact snippets, you place them, it checks the result.
 
 ## Order
 1. `list_clients` → the client. If it has no website address, `link_account` with `website` (preview, then confirm). Do not guess the domain.

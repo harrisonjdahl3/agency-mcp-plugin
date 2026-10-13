@@ -1,6 +1,6 @@
 ---
 name: crm-followup
-description: Works a client's HighLevel CRM through the Agency MCP connector — who is waiting on a reply, pipeline and won-work numbers for a period, appointments booked, cancelled or no-showed, finding contacts, and (when the agency has enabled writes) creating prospects, moving opportunities, adding notes and sending one email or SMS to one existing contact. Use for "who is waiting on us", "how many leads came in this month", "what did we close", "any no-shows", "add this prospect", "text Sam back".
+description: Works a client's HighLevel CRM through the Agency Autopilot connector — who is waiting on a reply, pipeline and won-work numbers for a period, appointments booked, cancelled or no-showed, finding contacts, and (when the agency has enabled writes) creating prospects, moving opportunities, adding notes and sending one email or SMS to one existing contact. Use for "who is waiting on us", "how many leads came in this month", "what did we close", "any no-shows", "add this prospect", "text Sam back".
 ---
 
 # CRM follow-up (HighLevel)

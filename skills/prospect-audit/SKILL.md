@@ -1,6 +1,6 @@
 ---
 name: prospect-audit
-description: Audits a business the agency does not manage yet — from just its website, or its name and city — from public data, through the Agency MCP connector — Google Business Profile completeness, reviews against nearby competitors, the website, tracking tags and map-pack position for its core searches — then publishes a branded page the agency can send. Use when asked to "audit [business] for a pitch", "run a prospect audit", "check how [business] shows up online before I reach out", or "make an audit I can send to [prospect]". Nothing needs to be connected. The dashboard's Audits tab runs the same audit.
+description: Audits a business the agency does not manage yet — from just its website, or its name and city — from public data, through the Agency Autopilot connector — Google Business Profile completeness, reviews against nearby competitors, the website, tracking tags and map-pack position for its core searches — then publishes a branded page the agency can send. Use when asked to "audit [business] for a pitch", "run a prospect audit", "check how [business] shows up online before I reach out", or "make an audit I can send to [prospect]". Nothing needs to be connected. The dashboard's Audits tab runs the same audit.
 ---
 
 # Prospect audit

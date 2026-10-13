@@ -1,6 +1,6 @@
 ---
 name: start
-description: First-run guide for Agency MCP. Use when the user asks how to set Agency MCP up, what it can do, what to do first, or opens a fresh session with it — "how do I set this up", "what can you do", "where do I start". Calls get_started and explains the value in the agency's own terms, then offers one thing to run right now.
+description: First-run guide for Agency Autopilot. Use when the user asks how to set Agency Autopilot up, what it can do, what to do first, or opens a fresh session with it — "how do I set this up", "what can you do", "where do I start". Calls get_started and explains the value in the agency's own terms, then offers one thing to run right now.
 ---
 
 # Start
@@ -19,7 +19,7 @@ description: First-run guide for Agency MCP. Use when the user asks how to set A
      the one they pick with `create_client` (preview, then confirm) and close anything in its `client_setup`.
    - A business they do not manage yet (a pitch): the `prospect-audit` skill — `audit_prospect` works
      with nothing connected; `create_prospect_report` publishes the page to send.
-   - New to marketing, or wants Agency MCP to lead a client end to end: the `run-client` skill (`client_playbook`) — onboarding, tracking, website, ads and the weekly cycle, one previewed step at a time.
+   - New to marketing, or wants Agency Autopilot to lead a client end to end: the `run-client` skill (`client_playbook`) — onboarding, tracking, website, ads and the weekly cycle, one previewed step at a time.
    - Where a client ranks, or rankings for a report: the `rank-tracking` skill (`rank_track`, `rank_report`).
    - A site the agency built in code: the `site-tracking-in-code` skill (ids and snippets from
      `tracking_spec`, edits in the codebase, `site_check` to verify). Never edit a codebase through

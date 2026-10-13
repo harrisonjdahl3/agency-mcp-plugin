@@ -1,13 +1,13 @@
-# Agency MCP
+# Agency Autopilot (formerly Agency MCP)
 
-Agency MCP connects the client accounts a marketing agency already manages — Google Ads, Google Analytics 4,
+Agency Autopilot connects the client accounts a marketing agency already manages — Google Ads, Google Analytics 4,
 Search Console, Business Profile, Meta ads, the client's website (WordPress or any other) and the agency's CRM —
 so client work gets done from this conversation instead of across a dozen consoles.
 
 ## First run
 1. Run `/mcp auth agency-mcp` and sign in with the Google account the agency already manages clients with.
    A browser window opens; nothing else needs installing.
-2. Ask "How do I set Agency MCP up?" — it checks what is connected, names the clients, and gives the one next step.
+2. Ask "How do I set Agency Autopilot up?" — it checks what is connected, names the clients, and gives the one next step.
 
 ## How to work with it
 - Start from the client: `list_clients` gives the exact names; every other tool takes the client's name or an account

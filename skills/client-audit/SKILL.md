@@ -1,6 +1,6 @@
 ---
 name: client-audit
-description: Audits one client through the Agency MCP connector and returns a scorecard of what to fix first — Google Ads (conversion tracking, keywords and search terms spending with no conversions, impression share, extensions), Meta ads (leads recorded, campaigns spending without leads, ad fatigue, click-through), Search Console (rankings within reach, titles nobody clicks) and Analytics (whether leads are measured). Then applies the safe Google Ads fixes in one confirmed step. Use for "audit Acme Fence", "what should we fix first", "where is the money going", "do it all", and as the first thing to run on a new client.
+description: Audits one client through the Agency Autopilot connector and returns a scorecard of what to fix first — Google Ads (conversion tracking, keywords and search terms spending with no conversions, impression share, extensions), Meta ads (leads recorded, campaigns spending without leads, ad fatigue, click-through), Search Console (rankings within reach, titles nobody clicks) and Analytics (whether leads are measured). Then applies the safe Google Ads fixes in one confirmed step. Use for "audit Acme Fence", "what should we fix first", "where is the money going", "do it all", and as the first thing to run on a new client.
 ---
 
 # Client audit

@@ -1,6 +1,6 @@
 ---
 name: seo-content
-description: Drafts or optimises a page or blog post on a client's website — WordPress through the Agency MCP connector, or any other builder through the assistant's own connector for it — including the SEO title, meta description and JSON-LD schema. Use when asked to write a service page, landing page, location page, blog post, or to "optimise this page", "fix the title tags", "add schema", "rewrite the meta descriptions". Creates drafts and previews every change; publishes only when the person explicitly says to publish.
+description: Drafts or optimises a page or blog post on a client's website — WordPress through the Agency Autopilot connector, or any other builder through the assistant's own connector for it — including the SEO title, meta description and JSON-LD schema. Use when asked to write a service page, landing page, location page, blog post, or to "optimise this page", "fix the title tags", "add schema", "rewrite the meta descriptions". Creates drafts and previews every change; publishes only when the person explicitly says to publish.
 ---
 
 # SEO content on a client's website

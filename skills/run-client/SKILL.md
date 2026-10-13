@@ -1,11 +1,11 @@
 ---
 name: run-client
-description: Runs a client step by step through the Agency MCP connector — onboarding, the tracking stack, website fixes, Google Ads, then a weekly cycle — doing one step at a time with every change previewed. Use when the person says "run [client]", "onboard my new client", "take over [client]'s marketing", "what should I do next for [client]", or is new to marketing and wants Agency MCP to lead. Works for any client already created on the dashboard or with create_client.
+description: Runs a client step by step through the Agency Autopilot connector — onboarding, the tracking stack, website fixes, Google Ads, then a weekly cycle — doing one step at a time with every change previewed. Use when the person says "run [client]", "onboard my new client", "take over [client]'s marketing", "what should I do next for [client]", or is new to marketing and wants Agency Autopilot to lead. Works for any client already created on the dashboard or with create_client.
 ---
 
 # Run a client
 
-For agencies that want Agency MCP to lead: it knows the order, checks the client's real accounts, and does the next thing. The person stays in charge of every change.
+For agencies that want Agency Autopilot to lead: it knows the order, checks the client's real accounts, and does the next thing. The person stays in charge of every change.
 
 ## The loop
 1. `client_playbook` with the client's name. Read back, in plain words: where they stand (`progress`), what is done, and the one `next` step with its `why`.

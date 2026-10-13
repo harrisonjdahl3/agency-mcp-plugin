@@ -1,6 +1,6 @@
 ---
 name: meta-ads-manager
-description: Reports on and manages a client's Meta (Facebook and Instagram) ads through the Agency MCP connector — spend, reach, clicks and conversions by campaign, pausing or enabling campaigns, changing daily budgets, and creating paused campaigns. Use for "how are the Facebook ads doing", "pause the Meta campaign", "what's our Meta spend", "set up a Meta campaign". Every change is previewed before it applies.
+description: Reports on and manages a client's Meta (Facebook and Instagram) ads through the Agency Autopilot connector — spend, reach, clicks and conversions by campaign, pausing or enabling campaigns, changing daily budgets, and creating paused campaigns. Use for "how are the Facebook ads doing", "pause the Meta campaign", "what's our Meta spend", "set up a Meta campaign". Every change is previewed before it applies.
 ---
 
 # Meta ads management

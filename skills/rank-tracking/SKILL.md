@@ -1,6 +1,6 @@
 ---
 name: rank-tracking
-description: Tracks where a client ranks on Google through the Agency MCP connector — the Search Console position for up to ten search terms every day, and the map-pack (Google Maps) position every Monday — and reads the movers back. Use when asked to "track rankings for [client]", "where does [client] rank for [term]", "are we moving up for [search]", "set up rank tracking", or when a client report needs a rankings section. Needs the client's Search Console site linked for positions; a city for the map pack.
+description: Tracks where a client ranks on Google through the Agency Autopilot connector — the Search Console position for up to ten search terms every day, and the map-pack (Google Maps) position every Monday — and reads the movers back. Use when asked to "track rankings for [client]", "where does [client] rank for [term]", "are we moving up for [search]", "set up rank tracking", or when a client report needs a rankings section. Needs the client's Search Console site linked for positions; a city for the map pack.
 ---
 
 # Rank tracking

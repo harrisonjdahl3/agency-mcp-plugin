@@ -1,10 +1,12 @@
-# Agency MCP plugin for Claude Code
+# Agency Autopilot plugin for Claude Code
+
+_Agency Autopilot was called Agency MCP until October 2026. The connector address, plugin id (`agency-mcp`) and install commands are unchanged._
 
 Also works as a connector in ChatGPT, Codex and any assistant that takes a custom MCP server: add `https://mcp.jiyumarketing.com/mcp` and sign in. The skills below are written for any assistant; only the install commands are Claude Code's.
 
-Run a marketing agency from the conversation. This plugin installs the **Agency MCP** connector and a set of skills that know how to use it: **Autopilot** (a hands-off weekly pass that works each client end to end and learns from what brings in leads), SEO audits, keyword research, on-page content, Google Ads and Meta Ads management, hosted lead forms, CRM follow-up and branded client reports.
+Run a marketing agency from the conversation. This plugin installs the **Agency Autopilot** connector and a set of skills that know how to use it: **Autopilot** (a hands-off weekly pass that works each client end to end and learns from what brings in leads), SEO audits, keyword research, on-page content, Google Ads and Meta Ads management, hosted lead forms, CRM follow-up and branded client reports.
 
-Agency MCP (https://mcp.jiyumarketing.com) connects the accounts your agency already manages — Google Analytics, Search Console, Google Ads, Meta ads, WordPress and HighLevel — to Claude. It only ever sees what your own logins can reach, and **every change is previewed first and applied only when you confirm it.**
+Agency Autopilot (https://mcp.jiyumarketing.com) connects the accounts your agency already manages — Google Analytics, Search Console, Google Ads, Meta ads, WordPress and HighLevel — to Claude. It only ever sees what your own logins can reach, and **every change is previewed first and applied only when you confirm it.**
 
 ## Install
 
@@ -13,9 +15,9 @@ Agency MCP (https://mcp.jiyumarketing.com) connects the accounts your agency alr
 /plugin install agency-mcp@agency-mcp
 ```
 
-Then type **"How do I set Agency MCP up?"** — it checks what is connected, names your clients, and tells you the one next step.
+Then type **"How do I set Agency Autopilot up?"** — it checks what is connected, names your clients, and tells you the one next step.
 
-The first tool call opens a Google sign-in for the Agency MCP connector. Sign in with the Google account you use to manage your clients. Then link each client's accounts once at https://mcp.jiyumarketing.com/dashboard → Clients, so reports and per-client questions resolve by name.
+The first tool call opens a Google sign-in for the Agency Autopilot connector. Sign in with the Google account you use to manage your clients. Then link each client's accounts once at https://mcp.jiyumarketing.com/dashboard → Clients, so reports and per-client questions resolve by name.
 
 Pricing: free for one client; paid plans are per client (see the site). No cost is charged through this plugin.
 

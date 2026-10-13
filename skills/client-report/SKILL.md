@@ -1,6 +1,6 @@
 ---
 name: client-report
-description: Produces a clear, jargon-free weekly or monthly client report across every channel the client has linked — organic search, website, Google Ads, Meta ads, CRM leads and won work — and publishes it as a branded shareable page through the Agency MCP connector, in whatever look the agency wants. Use for "send Acme their monthly report", "how did the client do last month", "build the weekly report", "change how my reports look", "edit that report", "save this as a template". Starts from client_overview and writes commentary a business owner understands.
+description: Produces a clear, jargon-free weekly or monthly client report across every channel the client has linked — organic search, website, Google Ads, Meta ads, CRM leads and won work — and publishes it as a branded shareable page through the Agency Autopilot connector, in whatever look the agency wants. Use for "send Acme their monthly report", "how did the client do last month", "build the weekly report", "change how my reports look", "edit that report", "save this as a template". Starts from client_overview and writes commentary a business owner understands.
 ---
 
 # Client report

@@ -1,6 +1,6 @@
 ---
 name: keyword-research
-description: Researches keywords for a client using Google Ads planning data (volumes, competition, bid ranges) joined with what the site already ranks for in Search Console. Use when onboarding a client, planning new service pages, building a campaign, or asked "what should we target", "keyword ideas for X", "what are people searching for". Produces a prioritised keyword map by page. Requires the Google Ads tools on the Agency MCP connector.
+description: Researches keywords for a client using Google Ads planning data (volumes, competition, bid ranges) joined with what the site already ranks for in Search Console. Use when onboarding a client, planning new service pages, building a campaign, or asked "what should we target", "keyword ideas for X", "what are people searching for". Produces a prioritised keyword map by page. Requires the Google Ads tools on the Agency Autopilot connector.
 ---
 
 # Keyword research

@@ -1,13 +1,13 @@
 ---
 name: connect-accounts
-description: Connects platforms and logins to an Agency MCP account and groups the accounts into clients without mixing businesses up. Use when a tool says a platform is not connected, when the user wants to connect Google, Meta ads, Business Profile, the CRM or a WordPress site, add a second login for a platform, let one of their clients connect their own accounts instead of granting manager access, or set up or fix which accounts belong to which client — "connect my Meta ads", "add another Google account", "send Acme a link to connect their accounts", "set up a client", "this client is showing the wrong data".
+description: Connects platforms and logins to an Agency Autopilot account and groups the accounts into clients without mixing businesses up. Use when a tool says a platform is not connected, when the user wants to connect Google, Meta ads, Business Profile, the CRM or a WordPress site, add a second login for a platform, let one of their clients connect their own accounts instead of granting manager access, or set up or fix which accounts belong to which client — "connect my Meta ads", "add another Google account", "send Acme a link to connect their accounts", "set up a client", "this client is showing the wrong data".
 ---
 
 # Connect accounts and group them into clients
 
 ## Connecting a platform
 `connect_platform` with `platform`: `google`, `meta`, `business_profile`, `crm` or `wordpress`. It returns a one-time `link` that lasts 30 minutes.
-- Give the person the link as a clickable link. Google, Meta and Business Profile go to that platform's own sign-in. The CRM and WordPress open a short form on Agency MCP's site.
+- Give the person the link as a clickable link. Google, Meta and Business Profile go to that platform's own sign-in. The CRM and WordPress open a short form on Agency Autopilot's site.
 - Never ask for a token, an application password or any other secret in the conversation. The person enters it on the page the link opens.
 - When they say it is done, run the tool that was refused again.
 - If a tool reports "not connected", offer the link once. Do not retry the tool until they say they have connected.

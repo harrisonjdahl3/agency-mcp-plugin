@@ -1,6 +1,6 @@
 ---
 name: google-ads-manager
-description: Manages a client's Google Ads through the Agency MCP connector — performance reports, search-term hygiene, negative keywords, budgets, bidding strategies, conversion tracking set-up, extensions (sitelinks, callouts, snippets, call assets), pausing or enabling, and building new search campaigns with ad groups, keywords and responsive search ads. Use for "how are the ads doing", "what did we spend", "add negatives", "raise the budget", "pause that campaign", "build a campaign for X". Every write is validated by Google and previewed before it applies. Requires the Google Ads tools on the connector.
+description: Manages a client's Google Ads through the Agency Autopilot connector — performance reports, search-term hygiene, negative keywords, budgets, bidding strategies, conversion tracking set-up, extensions (sitelinks, callouts, snippets, call assets), pausing or enabling, and building new search campaigns with ad groups, keywords and responsive search ads. Use for "how are the ads doing", "what did we spend", "add negatives", "raise the budget", "pause that campaign", "build a campaign for X". Every write is validated by Google and previewed before it applies. Requires the Google Ads tools on the connector.
 ---
 
 # Google Ads management

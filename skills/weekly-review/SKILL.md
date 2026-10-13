@@ -1,6 +1,6 @@
 ---
 name: weekly-review
-description: Reviews the changes an agency confirmed through the Agency MCP connector and what happened afterwards — each Google Ads or Meta ads change with the seven days before set against up to seven days after, marked win, loss, flat or too new to judge. Use for "review last week's changes", "did that work", "what worked", "what should we undo", a Monday review, or before reporting to a client on what was changed.
+description: Reviews the changes an agency confirmed through the Agency Autopilot connector and what happened afterwards — each Google Ads or Meta ads change with the seven days before set against up to seven days after, marked win, loss, flat or too new to judge. Use for "review last week's changes", "did that work", "what worked", "what should we undo", a Monday review, or before reporting to a client on what was changed.
 ---
 
 # Weekly change review
@@ -29,7 +29,7 @@ A verdict says what moved after a change, not that the change caused it. Keep th
 - A loss on a budget or bid change: propose reversing it with the same tool that made it (`ads_set_campaign_budget`, `ads_set_bidding_strategy`, `meta_set_campaign_budget`). Preview, then confirm.
 - A loss on a paused keyword: `ads_set_keyword_status` with `ENABLED`.
 - A win: leave it, and say what it suggests trying next.
-- Nothing listed: only changes confirmed through Agency MCP appear. Changes made directly in Google Ads or Meta Ads Manager are not in this review.
+- Nothing listed: only changes confirmed through Agency Autopilot appear. Changes made directly in Google Ads or Meta Ads Manager are not in this review.
 
 ## Rules
 - Do not reverse anything without an explicit yes.
