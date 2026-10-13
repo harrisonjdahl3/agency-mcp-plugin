@@ -34,7 +34,7 @@ One client per conversation: run the next client after `autopilot_finish`.
 - The dashboard's Autopilot tab shows the same: what needs the person (with one-click approve or a prompt to run), and each client's runs, changes and reasons.
 
 ## How the agency wants it to work
-- When the person says how Autopilot should or should not behave ("never touch the brand campaign", "write posts in German", "don't do that again"), record it with `autopilot_preference` (action `add`, one client or every client) and confirm it in a sentence. `list` shows everything it follows, stated and learned; `remove` drops one by key.
+- When the person says how Autopilot should or should not behave ("never touch the brand campaign", "write posts in German", "don't do that again"), record it with `autopilot_preference` (one client or every client) and confirm it in a sentence. `autopilot_preferences` shows everything it follows, stated and learned; `autopilot_preference_remove` drops one by key.
 - Preferences come first in every run, ahead of the agency's notes, the client's own results, the approved playbook and what worked elsewhere. Autopilot also learns them from what the agency approves, declines and undoes.
 - When the person declines a proposal or turns Autopilot off and the result carries `ask_why`, ask in one short line why, and record it with `autopilot_feedback`.
 

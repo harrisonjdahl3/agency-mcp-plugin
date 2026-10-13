@@ -30,7 +30,7 @@ Suggested sections, only those with data:
 
 ## Edit, and reuse
 - `update_client_report` with the report's link changes anything (title, period, sections replaced, added or removed by heading, its own style) and keeps the same link.
-- `report_template`: `save` one from an existing report (`from_report`) or from sections; `get` returns its structure to follow with this period's numbers; then `create_client_report` with `template`. Use for "build Acme's report from our monthly template".
+- Templates: `report_template_save` saves one from an existing report (`from_report`) or from sections; `report_templates` lists them; `report_template_get` returns one's structure to follow with this period's numbers; then `create_client_report` with `template`. Use for "build Acme's report from our monthly template".
 
 ## Rules
 - Every number carries its period.
