@@ -1,3 +1,5 @@
+<p align="center"><img src=".claude-plugin/icon.png" alt="Agency Autopilot logo" width="96" height="96"></p>
+
 # Agency Autopilot plugin for Claude Code
 
 _Agency Autopilot was called Agency MCP until October 2026. The connector address, plugin id (`agency-mcp`) and install commands are unchanged._
