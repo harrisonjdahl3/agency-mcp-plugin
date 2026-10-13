@@ -2,7 +2,7 @@
   "mcpServers": {
     "agency-mcp": {
       "type": "http",
-      "url": "https://mcp.jiyumarketing.com/mcp"
+      "url": "https://mcp.jiyumarketing.com/mcp?src=plugin"
     }
   }
 }
