@@ -25,4 +25,4 @@ The `skills/` folder holds step-by-step workflows (client audit, weekly change r
 Google Ads and Meta ads management, CRM follow-up, client reports, prospect audits, rank tracking). Use the one that
 matches the request.
 
-Docs: https://mcp.jiyumarketing.com/docs · Free for one client.
+Docs: https://getagencyautopilot.com/docs · Free for one client.
