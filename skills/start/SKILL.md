@@ -1,6 +1,6 @@
 ---
 name: start
-description: First-run guide for Agency Autopilot. Use when the user asks how to set Agency Autopilot up, what it can do, what to do first, or opens a fresh session with it — "how do I set this up", "what can you do", "where do I start". Calls get_started and explains the value in the agency's own terms, then offers one thing to run right now.
+description: First-run guide for Agency Autopilot (also called Agency MCP). Use when the user has just installed or connected it, asks how to set it up, what it can do, what to do first, says "set up my first client", "get started", "is it working", "test it", or opens a fresh session with a greeting or a vague first request about marketing, clients or accounts. Calls get_started and explains the value in the agency's own terms, then offers one thing to run right now, and, if no client is set up yet, sets up the first one in the chat.
 ---
 
 # Start
@@ -30,7 +30,10 @@ description: First-run guide for Agency Autopilot. Use when the user asks how to
      to connect their own accounts, use the `connect-accounts` skill (`connect_platform`,
      `client_access_link`). Never ask for a token or password in the conversation.
    - If they ask what is new, read `whats_new` and name the two or three most useful additions.
-3. End by offering to run the first `try_next` item immediately, as a question.
+3. End by offering to run the first `try_next` item immediately, as a question. If no client is set up
+   yet, the offer is always the same one: "Want me to set up your first client now? It takes about a
+   minute." Most people who connect never take a first step (10/20/26: 63% of sign-ups in two weeks),
+   so make this one obvious and easy.
 
 If they ask "what can you do for <client>?", call `get_started` if you have not already, then
 answer for THAT client only: which channels are linked, three things you can do with them

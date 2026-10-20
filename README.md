@@ -17,9 +17,9 @@ Agency Autopilot (https://getagencyautopilot.com) connects the accounts your age
 /plugin install agency-mcp@agency-mcp
 ```
 
-Then type **"How do I set Agency Autopilot up?"** — it checks what is connected, names your clients, and tells you the one next step.
+Then open a new chat and type **"Set up my first client"**. It finds the accounts you already manage, groups them by business, and you pick one, right in the chat. After that, ask "how is that client doing this month?"
 
-The first tool call opens a Google sign-in for the Agency Autopilot connector. Sign in with the Google account you use to manage your clients. Then link each client's accounts once at https://mcp.jiyumarketing.com/dashboard → Clients, so reports and per-client questions resolve by name.
+The first tool call opens a Google sign-in for the Agency Autopilot connector. Sign in with the Google account you use to manage your clients. Adding more clients works the same way, in the chat (or at https://mcp.jiyumarketing.com/dashboard → Clients), so reports and per-client questions resolve by name.
 
 Pricing: free for one client; paid plans are per client (see the site). No cost is charged through this plugin.
 
