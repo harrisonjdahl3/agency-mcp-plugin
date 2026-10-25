@@ -22,6 +22,13 @@ description: Drafts or optimises a page or blog post on a client's website — W
 - Internal links: to the two or three most related service pages and the contact page.
 - Length follows the job: service pages 600–1,000 words, location pages 400–700, posts as long as the answer needs.
 
+## Written to be quoted by AI answers too (ChatGPT, Perplexity, Claude, Google's AI Overviews)
+- Answer first: the opening paragraph says what the business does, where and for whom, in plain words, before any story. AI answers and Google's snippets quote the first lines.
+- Real numbers only: a price range, a permit rule, a timeline, the CCB or licence number, years in business, all from the client's own facts or attributed sources. Never invent a statistic or a claim.
+- Questions as questions: the FAQ uses the customer's own question as a visible heading, with a two or three sentence answer right under it (and FAQPage schema that mirrors only what's visible).
+- Name things exactly: the town, the material, the service ("cedar privacy fence in Keizer"), not "our solutions".
+- `site_check` reports `ai_search`: AI search crawlers blocked in robots.txt (a real problem), whether the home page's opening and FAQ give an answer to quote, and `/llms.txt` (optional; few systems read it yet).
+
 ## Apply, always as a preview first
 - New page: `wp_write_post` with `type: "page"`, `title`, `slug`, `content` (clean HTML: h2/h3, p, ul, a). Omit `status` so it is created as a **draft**.
 - Existing page: `wp_write_post` with `id`, changed fields only. It previews; call again with `confirm: true` only after the person agrees.
