@@ -10,6 +10,7 @@ description: Audits a client's organic search health using Search Console, Googl
 2. Choose the period: default the last 28 days vs the 28 before. Name both ranges in the answer.
 
 ## Pull, in this order
+- **Search Console insights first** — `gsc_insights` (client, 28 days against the 28 before) works out the patterns the same way every time: searches split between two pages (with the page that should win), page-one results with far fewer clicks than their position should get (a title and description job), searches at positions 4–15, pages that lost clicks and the searches they lost, and the brand share. Start from its findings; use the raw pulls below for anything it doesn't cover.
 - **Rankings and clicks** — `gsc_query` with dimensions `["query"]` for both periods (row_limit 500). Then `["page"]` for both periods.
 - **Position 4–15 opportunities** — from the query rows, list terms with impressions ≥ 50 and position between 4 and 15: these move with on-page work.
 - **Losers** — pages or queries whose clicks fell ≥ 30% period over period with impressions still present (a ranking problem) versus impressions also falling (a demand problem).

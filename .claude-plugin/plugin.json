@@ -1,7 +1,7 @@
 {
   "name": "agency-mcp",
   "displayName": "Agency Autopilot",
-  "version": "1.11.1",
+  "version": "1.11.2",
   "description": "Run a marketing agency from your AI assistant: Autopilot (a hands-off weekly pass per client that learns from what brings in leads), client audits with one-step fixes, weekly change reviews, SEO audits, keyword research, on-page content, Google Ads and Meta Ads management, hosted lead forms, CRM follow-up and client reports \u2014 on the accounts you already manage, through the Agency Autopilot connector (Google Analytics, Search Console, Google Ads, Business Profile, Meta, WordPress, HighLevel). Every change is previewed, or made within the limits you set for Autopilot.",
   "author": {
     "name": "Jiyu Marketing LLC",

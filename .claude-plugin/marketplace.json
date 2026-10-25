@@ -6,14 +6,14 @@
   },
   "metadata": {
     "description": "Agency Autopilot \u2014 the marketing-agency plugin for Claude Code: Autopilot, SEO, Google Ads, Meta Ads, CRM and client reporting skills on top of the Agency Autopilot connector.",
-    "version": "1.11.1"
+    "version": "1.11.2"
   },
   "plugins": [
     {
       "name": "agency-mcp",
       "source": "./",
       "description": "Autopilot runs each client hands-off and learns from what brings in leads; plus client audits with one-step fixes, weekly change reviews, SEO, keyword research, content, Google Ads and Meta Ads, hosted lead forms, CRM follow-up and branded client reports. Preview-then-confirm on every manual change.",
-      "version": "1.11.1",
+      "version": "1.11.2",
       "author": {
         "name": "Jiyu Marketing LLC",
         "url": "https://getagencyautopilot.com"
