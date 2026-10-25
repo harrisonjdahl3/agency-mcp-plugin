@@ -7,7 +7,7 @@ description: Reports on and manages a client's Meta (Facebook and Instagram) ads
 
 ## Always
 - `meta_list_accounts` first; use the `act_…` id it returns. Note whether the account can currently spend.
-- `meta_list_pages` when a campaign needs a Page.
+- `meta_list_pages` when a campaign needs a Page. If it says the connection predates Page access, the agency disconnects and reconnects Meta once on the dashboard (Meta re-approved Page access on 23 Oct 2026).
 - Name the date range in every number.
 
 ## Reporting

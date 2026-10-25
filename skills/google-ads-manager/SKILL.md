@@ -47,10 +47,15 @@ If the site is not connected with an Administrator password or the Bridge is old
 ## Extensions
 `ads_list_extensions` lists sitelinks, callouts, structured snippets and call assets with a `gaps` list. A finished search campaign has 4+ sitelinks (service pages), 4+ callouts (licensed, free estimates, financing, warranty), one structured snippet (Services: …) and a call asset with the client's lead line. `ads_add_extensions` adds them per campaign or account-wide; `ads_remove_extension` retires an old one. A phone number change is add the new, then remove the old.
 
+## Where the ads send people — look before you build
+Before any new campaign, ad, sitelink or landing page change, call `landing_evidence` for the client (add `url` and your planned ad text to check a page). It pulls 90 days of Google Ads clicks and conversions by landing page and sitelink, Analytics paid sessions and leads by landing page on every property, Search Console clicks per page and hosted-form leads, and names the page paid visitors convert on. Decide from those numbers, not from Google's landing-page rating alone, and quote them in the plan.
+Every campaign should start on a **dedicated landing page**: one service, the area it serves, the offer, proof, and the form and phone number above the fold. If there isn't one, offer to build it (`wp_write_post`, type page, left as a draft on WordPress; a brief plus `tracking_spec` for a site built in code) and keep the ads on the page that converts today until the new one has proved itself.
+`ads_create_ad`, sitelinks and `ads_create_campaign` return a `landing_check`: warnings when the page has no paid conversion history while another converts, isn't a dedicated page, or contradicts the ad (prefab vs built on site, towns, timelines, prices, "free"). Show every warning with its numbers; confirm on that page only with the person's yes, passing `acknowledge_landing: true`.
+
 ## Building a search campaign
-1. Research: `ads_find_locations` for the service area; `ads_keyword_ideas` for volumes.
-2. `ads_create_campaign` — daily budget, geo targets, bidding. It previews with the monthly equivalent; confirm to create. Campaigns are created **paused**.
-3. `ads_create_ad_group` → `ads_add_keywords` (phrase match by default, exact for the strongest terms) → `ads_create_ad` (responsive search ad: 8–15 headlines, 4 descriptions, final URL on the client's site).
+1. Research: `ads_find_locations` for the service area; `ads_keyword_ideas` for volumes; `landing_evidence` for where it should land.
+2. `ads_create_campaign` — daily budget, geo targets, bidding. Its preview asks **where the campaign should land** (`landing_page_question`: the client's pages with their paid conversion numbers, and how to build a dedicated page). Ask the person, offer to build the page if needed, then call again with `landing_page`. It previews with the monthly equivalent; confirm to create. Campaigns are created **paused**.
+3. `ads_create_ad_group` → `ads_add_keywords` (phrase match by default, exact for the strongest terms) → `ads_create_ad` (responsive search ad: 8–15 headlines, 4 descriptions, final URL = the campaign's landing page; every claim must be on that page).
 4. `ads_add_negative_keywords` with the informational list.
 5. `ads_add_extensions`: sitelinks, callouts, a structured snippet and the call asset.
 6. Tell the person the campaign is paused and what must be checked before enabling: conversion tracking (`ads_list_conversion_actions`), landing page, phone number.
