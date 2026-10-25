@@ -15,6 +15,7 @@ Then link each location to its client: `gbp_list_locations` gives the `gbp_locat
 - Reviews: `gbp_reviews` — rating, text, whether replied. Lead with unanswered reviews.
 - Performance: `gbp_performance` for a date range — impressions on Maps and Search, calls, website clicks, direction requests, with daily values.
 - Posts: `gbp_posts`.
+- How the profile stands against the competition: `site_health` for the client carries `business_profile` (reply rate and time, how recently it posted, new reviews in 90 days, reviews against the top 3 map competitors, its map position for its main category, missing description, hours, categories, website or phone) and `competitor_news` (a new business in the top 3, a competitor gaining reviews, the client's own moves). Start a "how is our Business Profile doing" answer there, then fix with replies and posts.
 
 ## Writes — preview, confirm, apply
 - `gbp_reply_review`: draft the reply, show it, apply only on `confirm: true`. Thank by name, address the specific point, never argue, invite the conversation offline for complaints.

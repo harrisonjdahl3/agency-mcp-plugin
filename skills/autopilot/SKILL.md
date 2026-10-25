@@ -30,6 +30,10 @@ One client per conversation: run the next client after `autopilot_finish`.
 - On the person's yes or no to a proposal: `autopilot_approve` with its id and `approve` (runs exactly that change, nothing else) or `decline`.
 - `autopilot_log`: every change Autopilot made, why, the result it expected, and the measured result (leads before against after). Use it for "what did it change", "why did it do that", "did it work".
 - `whole_picture`: the ads, the website and Analytics joined per page and per search (paid clicks against leads from every source and organic rank). Look at it before adjusting anything, by hand or with Autopilot.
+- `keyword_strategy`: the client's keyword map, the SEO strategy Autopilot works from: groups of the searches that bring the business its customers, each with the page that should rank, measured weekly (top 3, page 1, page 2, not ranking, split between two of its pages, no page yet) with the best opportunities first. Autopilot drafts the first map; the agency approves it once (here, or on the dashboard's keyword map page). After that Autopilot keeps it current, and any change that moves a target page, drops a group or changes the goal comes back for approval.
+- `site_health`: speed on the money pages, page faults (cut-off sentences, broken links, missing H1, long titles), indexing (pages Google hasn't indexed, with its reason) and Business Profile health, each week against the last. Autopilot reads it every run and fixes or proposes; `refresh: true` with a `url` re-checks one page after a change.
+- `competitor_pages`: what the pages Google Maps ranks for a service have in common, against the client's page, with an outline. Autopilot uses it before drafting or reworking a page.
+- `landing_evidence`: 90 days of Ads, Analytics, Search Console and form leads per page, and the page that converts paid visitors. Every ad, sitelink or landing-page change starts here.
 - `ads_diagnose`: the Google Ads checks Autopilot must clear (tracking, bidding, reach lost to rank or budget, keyword quality, ad strength, ad text relevance, wasted searches). Ad text relevance reads every live headline and description: leftover or off-topic text is a problem whatever Google's ad strength says.
 - The dashboard's Autopilot tab shows the same: what needs the person (with one-click approve or a prompt to run), and each client's runs, changes and reasons.
 
@@ -39,6 +43,7 @@ One client per conversation: run the next client after `autopilot_finish`.
 - When the person declines a proposal or turns Autopilot off and the result carries `ask_why`, ask in one short line why, and record it with `autopilot_feedback`.
 
 ## Rules
+- Autopilot is a full-stack SEO and ads agency for the client: the goal is ranking for the searches that bring its customers, and the leads, jobs and sales that follow, not activity.
 - Before any change, check the whole picture for what it touches; every change-log reason cites at least two data sources.
 - One change at a time: after a significant change (bidding, budget, a new ad or keywords, a page edit) the next one on the same account or page waits until it has been judged.
 - Autopilot never spends more money, takes a page down, messages anyone or touches another client on its own; those come back as proposals.
