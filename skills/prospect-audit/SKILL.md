@@ -9,7 +9,7 @@ The pitch tool. In a few minutes: a scorecard, the three fixes most worth making
 
 ## Run
 1. The website alone is enough. If the person gives a site, call with just `website`: the tool finds the business's Google listing by its domain, and reads the name, city (from the listing, or the site's own title for service-area businesses) and trade (what the site says it does, else Google's category) itself. Without a website, ask for the business name and city.
-2. `audit_prospect` with `website`, or `name` + `city`; add `trade` only if the person named one. Add `terms` only if the person named specific searches; otherwise the tool builds "service + city" terms. The speed check adds up to 40 seconds; keep it on unless they are in a hurry.
+2. `audit_prospect` with `website`, or `name` + `city`; add `trade` only if the person named one. Add `terms` only if the person named specific searches; otherwise the tool builds "service + city" terms. The speed check adds up to 60 seconds (it keeps the better of two runs, so a score is never one bad run); keep it on unless they are in a hurry. When the speed fact names what slows the site, use that cause in the pitch rather than the score alone.
 3. Read the result: `overall`, five `sections` (each with `score`, `status`, `summary`, `facts`), `top_fixes`, `competitors`, `not_checked`.
 
 ## Tell the person

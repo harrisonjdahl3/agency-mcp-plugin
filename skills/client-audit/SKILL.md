@@ -40,7 +40,7 @@ It accepts only items the audit flags at that moment, so a term it lists under `
 - Ad fatigue on Meta: new creative is uploaded in Meta Ads Manager; say so.
 - Rankings between 5 and 20, and low click-through titles: `wp_get_post` then `wp_set_seo` on the page behind the query.
 - Leads not measured in Analytics: `ga4_create_key_event`, then `wp_tracking_status` (WordPress) or `gtm_tracking_status` (any site with Tag Manager).
-- Website areas (`site_tracking`, `site_on_page`, `site_health`) come from a read of the live site, any builder; `site_check` on the URL gives the page-by-page detail behind them.
+- Website areas (`site_tracking`, `site_on_page`, `site_health`) come from a read of the live site, any builder; `site_check` on the URL gives the page-by-page detail behind them. When the weekly site health ran in the last 8 days, speed comes from it (every money page, with causes) and two more areas appear: `site_indexing` (pages that matter that Google hasn't indexed) and `business_profile` (replies, posting, review gap, map position). Quote the cause with the fix, not just the score.
 
 Each of these previews first and applies only on confirmation.
 
