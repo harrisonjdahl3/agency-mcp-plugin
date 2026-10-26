@@ -33,6 +33,8 @@ description: Drafts or optimises a page or blog post on a client's website — W
 - New page: `wp_write_post` with `type: "page"`, `title`, `slug`, `content` (clean HTML: h2/h3, p, ul, a). Omit `status` so it is created as a **draft**.
 - Existing page: `wp_write_post` with `id`, changed fields only. It previews; call again with `confirm: true` only after the person agrees.
 - SEO fields: `wp_set_seo` with `title` (50–60 chars), `description` (140–160 chars), `canonical` if needed, and `schema` as a JSON-LD string — `LocalBusiness` (or a subtype like `HomeAndConstructionBusiness`) for service pages, `FAQPage` when there is an FAQ. Preview, then `confirm: true`.
+- Text on an existing page: `wp_replace_in_post`. Its preview reads the live page: if it says the edit would change nothing visitors see (Elementor content the theme doesn't render, or text that only sits in a fallback copy), don't make it; change that text in wp-admin or tell the person exactly what to change. After the confirmed call, `live` says whether the new text is on the live page; it isn't done until it is.
+- Showing a change before making it ("show me first"): build the preview from the live page's own HTML, with its real header, logo, fonts, CSS and footer and a `<base href>` to the site. Change only the content inside its real sections, strip analytics and ad tags, label it DRAFT, and say any embedded form is live. Never invent colours, fonts or a logo; if the live page can't be read, say so instead of mocking it up.
 - Images: `wp_add_image` from a URL, with alt text naming the service and place.
 - Publishing: only with `status: "publish"` and `confirm: true`, and only when the person said "publish".
 
@@ -45,4 +47,5 @@ Show the draft or the diff, the SEO title and description with character counts,
 ## Rules
 - Never publish, never overwrite an existing page, without the explicit word.
 - Never claim reviews, awards or years in business that were not given to you.
+- Never approximate a client's site in a preview: it is built from the live page or not shown.
 - If the site check fails (`wp_check_site`), report the reason and stop; do not queue changes blind.
