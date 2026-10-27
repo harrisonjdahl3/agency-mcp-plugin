@@ -27,7 +27,7 @@ description: First-run guide for Agency Autopilot (also called Agency MCP). Use 
    - If a tool says an account "is not linked to any of your clients" and a client exists, use
      `link_account` (preview, then confirm) rather than sending them to the dashboard.
    - If a platform they want is not connected, or they want a second login or a link for a client
-     to connect their own accounts, use the `connect-accounts` skill (`connect_platform`,
+     to connect their own accounts, use the `connect-accounts` skill (the connect tools (`connect_google`, `connect_meta`, …),
      `client_access_link`). Never ask for a token or password in the conversation.
    - If they ask what is new, read `whats_new` and name the two or three most useful additions.
 3. End by offering to run the first `try_next` item immediately, as a question. If no client is set up
