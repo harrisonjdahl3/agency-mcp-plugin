@@ -11,7 +11,7 @@ description: Drafts or optimises a page or blog post on a client's website — W
    - **Connected both here and through another connector?** Pick one and use it for the whole job.
    The steps below are the WordPress-through-Agency-MCP path.
 2. `wp_site_capabilities` once per site: confirms the bridge plugin, so SEO fields and schema can be set.
-3. Take the target from the client's keyword map (`keyword_strategy`, action get): the cluster this page should win, its searches and their volumes. No map yet? Build one (action research, then save) or, for a one-off, use the `keyword-research` brief, or ask for the primary keyword and the page's job (rank for X, convert visitors to calls or form fills).
+3. Take the target from the client's keyword map (`keyword_map_get`): the cluster this page should win, its searches and their volumes. No map yet? Build one (`keyword_research`, then `keyword_map_save`) or, for a one-off, use the `keyword-research` brief, or ask for the primary keyword and the page's job (rank for X, convert visitors to calls or form fills).
 4. Study the pages that win before you write: `competitor_pages` with the service (add a comparable market with strong winners, e.g. "Fresno, CA" for a shed builder, when the local ones are weak). Build from the pattern they share: the sections they all cover, their length, where they put the form and phone, the schema they use. Mirror structure and coverage, never their words or a claim the client hasn't made.
 5. For an existing page: `wp_get_post` first. Read what's there; keep what works. Check `site_health` for that page (speed, a cut-off sentence, missing H1, indexing) and fix those too.
 

@@ -6,7 +6,7 @@ description: Connects platforms and logins to an Agency Autopilot account and gr
 # Connect accounts and group them into clients
 
 ## Connecting a platform
-`connect_platform` with `platform`: `google`, `meta`, `business_profile`, `crm` or `wordpress`. It returns a one-time `link` that lasts 30 minutes.
+The connect tool for the platform: `connect_google`, `connect_meta`, `connect_business_profile`, `connect_crm` or `connect_wordpress`. It returns a one-time `link` that lasts 30 minutes.
 - Give the person the link as a clickable link. Google, Meta and Business Profile go to that platform's own sign-in. The CRM and WordPress open a short form on Agency Autopilot's site.
 - Never ask for a token, an application password or any other secret in the conversation. The person enters it on the page the link opens.
 - When they say it is done, run the tool that was refused again.
@@ -14,7 +14,7 @@ description: Connects platforms and logins to an Agency Autopilot account and gr
 
 ## More than one login on a platform
 An account can hold several Google logins, several Facebook logins, several Business Profile logins, one CRM token per client sub-account, and any number of WordPress sites.
-- `connect_platform` adds a login; it does not replace the existing one. For a different Google or Facebook user, the person must choose that other account on the sign-in screen (logging out of Facebook first, or using a private window, makes Facebook ask).
+- A connect tool adds a login; it does not replace the existing one. For a different Google or Facebook user, the person must choose that other account on the sign-in screen (logging out of Facebook first, or using a private window, makes Facebook ask).
 - List tools return everything every login reaches. With several logins each row carries `google_login` or `meta_login`: two accounts can share a name, so say the login when you name the account.
 - Each account is reached through the login that has access to it. Nothing needs to be chosen per request.
 
@@ -25,7 +25,7 @@ An account can hold several Google logins, several Facebook logins, several Busi
 - When the client has connected, their accounts appear in the list tools marked with their login. Then link them to the client as below.
 
 ## Connect everything the client has
-Before creating a client, or right after, ask the person once, in one message, what else the business has: Google Ads, Facebook or Instagram ads, a Google Business Profile, a website (and whether it is WordPress), and a CRM. `create_client` and `link_account` return `client_setup` with exactly what is still missing and how to close each: `link_account` when the account is already connected (for example Meta is connected but not linked to this client), or `connect_platform` first when it is not. Close every yes, skip what they don't have, and do this before any Autopilot offer: Autopilot does more with more connected.
+Before creating a client, or right after, ask the person once, in one message, what else the business has: Google Ads, Facebook or Instagram ads, a Google Business Profile, a website (and whether it is WordPress), and a CRM. `create_client` and `link_account` return `client_setup` with exactly what is still missing and how to close each: `link_account` when the account is already connected (for example Meta is connected but not linked to this client), or the connect tools (`connect_google`, `connect_meta`, `connect_business_profile`, `connect_crm`, `connect_wordpress`) first when it is not. Close every yes, skip what they don't have, and do this before any Autopilot offer: Autopilot does more with more connected.
 
 ## Grouping accounts into a client
 A client is one business. Connecting a login links nothing by itself.
