@@ -28,4 +28,4 @@ The pitch tool. In a few minutes: a scorecard, the three fixes most worth making
 On a clear yes: `create_prospect_report` with the prospect's name and sections built from the audit — one section per area that was checked (heading, two or three `stats` such as the score and the key count, and `commentary` in everyday words), plus a final "What we'd fix first" section with the three fixes. Preview first; publish with `confirm: true` only after the person agrees. Return the link. Branding must be set on the dashboard's White label tab first, or the page goes out unbranded; the preview says if it is missing.
 
 ## When they sign
-`create_client` with the same name and `website`, then `link_account` as access is granted. The report link keeps working; the client audit (`audit_client`) takes over from there.
+Offer to draft their agreement (the sign-clients skill); signing creates the client in Agency Autopilot. Then `link_account` or `client_access_link` as access is granted. The report link keeps working; the client audit (`audit_client`) takes over from there.
