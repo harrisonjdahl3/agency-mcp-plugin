@@ -26,4 +26,4 @@ From a trade and an area to a short list of businesses worth calling, each with 
 - Credits: monthly ones are used first, then the 100 welcome credits, then bought packs. The result's last line (`credits`) is the balance; quote it as it is.
 
 ## After
-For a deeper look at one business before the pitch, `audit_prospect` with its website (see the prospect-audit skill). When they sign: `create_client` with the same name and website.
+For a deeper look at one business before the pitch, `audit_prospect` with its website (see the prospect-audit skill). When one says yes, offer to draft their agreement (the sign-clients skill): `agreement_draft` fills in the business from this search. Signing creates the client; don't `create_client` by hand.

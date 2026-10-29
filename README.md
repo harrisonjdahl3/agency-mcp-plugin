@@ -38,6 +38,7 @@ Pricing: free for one client; paid plans are per client (see the site). No cost 
 | `google-ads-manager` | Reports, search-term hygiene, negatives, budgets, pauses and new campaign builds, all previewed and validated by Google before anything applies. |
 | `meta-ads-manager` | Meta (Facebook and Instagram) campaign reporting, status and budget changes with the same preview-then-confirm discipline. |
 | `find-prospects` | Finds local businesses in any trade and area, checks each website, ranks the ones you could help most and drafts a first email, follow-up and phone opener. One credit per business; 100 free to start. Nothing is sent. |
+| `sign-clients` | Drafts a client agreement from one sentence, filled in from your prospects, clients and branding, with a live preview; the client signs on their phone and pays into your own Stripe. Signing sets them up as a client. |
 | `crm-followup` | HighLevel: who is waiting on a reply, pipeline and won-work numbers, appointments, and prospect creation when writes are enabled. |
 | `client-report` | A clear, jargon-free weekly or monthly report across every channel a client has linked, published as a branded shareable page. |
 | `local-seo-gbp` | Google Business Profile reviews, posts and performance — activates when the Business Profile tools are enabled on your account. |

@@ -29,6 +29,10 @@ description: First-run guide for Agency Autopilot (also called Agency MCP). Use 
    - If a platform they want is not connected, or they want a second login or a link for a client
      to connect their own accounts, use the `connect-accounts` skill (the connect tools (`connect_google`, `connect_meta`, …),
      `client_access_link`). Never ask for a token or password in the conversation.
+   - The journey to lead them through, one step at a time and always offering the next: first client →
+     Autopilot set-up → its search plan, approved → once a client is running, "want more clients like this?"
+     (the `find-prospects` skill) → when one says yes, the agreement (the `sign-clients` skill) → the new
+     client's set-up. Follow `get_started`'s `next_step` for where each client stands.
    - If they ask what is new, read `whats_new` and name the two or three most useful additions.
 3. End by offering to run the first `try_next` item immediately, as a question. If no client is set up
    yet, the offer is always the same one: "Want me to set up your first client now? It takes about a
