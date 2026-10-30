@@ -1,11 +1,11 @@
 ---
 name: autopilot
-description: Runs Autopilot on a client through the Agency Autopilot connector — the hands-off weekly pass that works leads and forms, tracking, the website and SEO, Google Ads and Business Profile, within the limits the agency set, on the person's own Claude plan. Use when the person says "run Autopilot on [client]", "turn on Autopilot", "put [client] on autopilot", "set up the weekly Autopilot task", asks what Autopilot did, learned or needs from them, or says how Autopilot should or should not behave. Premium plan.
+description: Runs Autopilot on a client through the Agency Autopilot connector — the hands-off weekly pass that works leads and forms, tracking, the website and SEO, Google Ads and Business Profile, within the limits the agency set, on the person's own AI assistant plan. Use when the person says "run Autopilot on [client]", "turn on Autopilot", "put [client] on autopilot", "set up the weekly Autopilot task", asks what Autopilot did, learned or needs from them, or says how Autopilot should or should not behave. Premium plan.
 ---
 
 # Autopilot
 
-Autopilot works a client end to end so the agency (or the business owner) does not have to: leads and forms first, then tracking, the website and SEO, Google Ads, Business Profile and the report. It runs inside the person's own Claude, on their Claude plan, so there is no separate AI bill.
+Autopilot works a client end to end so the agency (or the business owner) does not have to: leads and forms first, then tracking, the website and SEO, Google Ads, Business Profile and the report. It runs inside the person's own AI assistant, on their own plan, so there is no separate AI bill.
 
 ## Set it up first (once per client, and once per agency)
 `autopilot_setup_questions` returns what's still unanswered: the agency's questions only the first time, then just the client's (what it sells, as ticked services taken from its Business Profile and service pages, including Meta ads; where its customers come from; what counts as a win; competitors it knows). Every question has a "Something else" box for the person's own words. Ask the unanswered ones in one message with the options and the default, then `autopilot_setup_save`. Never re-ask what's saved.
@@ -25,7 +25,7 @@ When `get_started`, `create_client` or `link_account` returns `autopilot_offer`,
 One client per conversation: run the next client after `autopilot_finish`.
 
 ## Every week, by itself
-`autopilot_routine` gives the prompt for a weekly scheduled task in Claude (all clients in shadow or on, or one client). Offer to set it up: in Claude, create a scheduled task that runs once a week with the Agency Autopilot connector on, and paste the prompt.
+`autopilot_routine` gives the weekly prompt and how to run it in this assistant (all clients in shadow or on, or one client). Offer to set it up: where this assistant supports scheduled tasks with connectors, create one that runs once a week with the Agency Autopilot connector on, and paste the prompt; otherwise, run it with a weekly ask.
 
 ## What it did, learned, and what needs the person
 - `autopilot_status` with no client: everything Autopilot needs from the agency across clients (`needs_you`, each with its fix). With one client: its runs, open lead alerts, proposals waiting for a yes, what it has `learned` about the client, and what has worked across all Autopilot clients (`across_autopilot`). Use it for "what does Autopilot need from me" and "what has Autopilot learned".

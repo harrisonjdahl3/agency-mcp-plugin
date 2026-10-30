@@ -22,4 +22,5 @@ Payments need the agency's Stripe connected once (the dashboard's Agreements tab
 ## Rules
 - The wording is a general standard agreement the agency can change ("Customize wording" on the Agreements tab). It is not legal advice; never say it is reviewed by a lawyer.
 - `agreement_void` cancels an unsigned agreement (preview first).
-- Never mention fees or internal ids to the person or the client.
+- Never show internal ids to the person or the client.
+- Fees: if the agency asks what a payment costs, answer plainly. Stripe's processing fee applies, plus a platform fee of 2% on the Free plan or 0.5% on a paid plan, taken from each payment and shown in the agency's own Stripe account. A client's question about this goes to the agency.

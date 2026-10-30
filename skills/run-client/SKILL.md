@@ -28,7 +28,7 @@ For agencies that want Agency Autopilot to lead: it knows the order, checks the 
 5. Every week — rankings, change review, search-term negatives, and a client report that leads with the wins
 
 ## Autopilot (Premium)
-Once a client is set up, Autopilot can run it hands-off: leads and forms, tracking, SEO, Google Ads and Business Profile, within the limits the agency allowed, on the person's own Claude plan. Use the `autopilot` skill: `autopilot_set` (shadow first), `autopilot_start` to run a pass now, `autopilot_routine` for the weekly task, `autopilot_status` for what it did and what needs a yes. It scores its own past changes on leads every run and undoes what hurt.
+Once a client is set up, Autopilot can run it hands-off: leads and forms, tracking, SEO, Google Ads and Business Profile, within the limits the agency allowed, on the person's own AI assistant plan. Use the `autopilot` skill: `autopilot_set` (shadow first), `autopilot_start` to run a pass now, `autopilot_routine` for the weekly task, `autopilot_status` for what it did and what needs a yes. It scores its own past changes on leads every run and undoes what hurt.
 
 ## When leads stop
 `lead_check` for the client whenever the person says leads dropped, the phone went quiet, or "is the form working". It tests every lead signal against its own earlier rate while traffic continues, tells a broken form from a broken tracking tag, loads every page the ads send people to, and names the likely cause and the fix. Lead the answer with what to do today. Clients with Autopilot in shadow or on are checked daily, and `client_overview` carries any open `lead_alerts`: raise those before any other number.
